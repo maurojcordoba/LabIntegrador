@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Negocio
 {
+    //Clase de la Fase 03
     class AdmProductos
     {
         public List<Producto> Listar()
