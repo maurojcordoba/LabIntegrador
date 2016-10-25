@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClienteIndividuo.cs" />
+    <Compile Include="DatosContacto.cs" />
     <Compile Include="DocumentoComercial.cs" />
     <Compile Include="Empresa.cs" />
     <Compile Include="Factura.cs" />
