@@ -15,9 +15,21 @@ namespace Negocio
         }
 
         //Lista de Productos
-        public List<Producto> Listar(string CUIT)
+        public List<Producto> Listar(string Categoria)
         {
             return new List<Producto>();
+        }
+
+        public List<Producto> Listar(string Categoria, string SubCategoria)
+        {
+            return new List<Producto>();
+        }
+
+        public Producto ListarDetalle(string Nombre)
+        {
+            Producto Item = new Producto();
+            //...
+            return Item;
         }
     }
 }

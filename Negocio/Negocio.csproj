@@ -41,6 +41,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdmClientes.cs" />
+    <Compile Include="AdmCompras.cs" />
+    <Compile Include="AdmFacturas.cs" />
     <Compile Include="AdmProductos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

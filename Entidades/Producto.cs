@@ -31,6 +31,11 @@ namespace Entidades
         public string Categoria { get; set; }
         public string SubCategoria { get; set; }
 
+        public Producto()
+        {
+
+        }
+
         public Producto(string Nombre, string Descripcion, decimal PrecioCosto, double Margen, double IVA, string Proveedor, string Categoria, string SubCategoria)
         {
             this.Nombre = Nombre;
