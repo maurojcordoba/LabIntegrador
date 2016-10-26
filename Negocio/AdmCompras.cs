@@ -9,7 +9,7 @@ namespace Negocio
 {
     public class AdmCompras
     {
-        public void Agregar(Producto item, int cantidad)
+        public void Agregar(Item item, int cantidad)
         {
 
         }

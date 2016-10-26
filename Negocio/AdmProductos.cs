@@ -15,17 +15,17 @@ namespace Negocio
         }
 
         //Lista de Productos
-        public List<Producto> Listar(string Categoria)
+        public List<Producto> Listar(Categoria Categoria)
         {
             return new List<Producto>();
         }
 
-        public List<Producto> Listar(string Categoria, string SubCategoria)
+        public List<Producto> Listar(Categoria Categoria, Categoria SubCategoria)
         {
             return new List<Producto>();
         }
 
-        public Producto ListarDetalle(string Nombre)
+        public Producto Listar(string Nombre)
         {
             Producto Item = new Producto();
             //...

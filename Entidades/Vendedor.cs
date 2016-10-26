@@ -11,14 +11,12 @@ namespace Entidades
     {
         public string DNI { get; set; }
 
-        public Vendedor(string pNombre, string pApellido, string pDNI, string pEmail, string pTelefono, string pDireccion)
+        public Vendedor(string pNombre, string pApellido, string pDNI, DatosContacto pDatosContacto)
         {
             this.Nombre = pNombre;
             this.Apellido = pApellido;
             this.DNI = pDNI;
-            this.Email = pEmail;
-            this.Telefono = pTelefono;
-            this.Direccion = pDireccion;
+            this.DatosContacto = pDatosContacto;
         }
 
         

@@ -17,16 +17,18 @@ namespace Consola
             Console.WriteLine("Fase01");
             Console.WriteLine("Ingrese un Producto2");
 
-            string Nombre = "Producto 01", 
-                Descripcion ="",
-                Proveedor ="", 
-                Categoria ="", 
-                SubCategoria ="";
+            string Nombre = "Producto 01",
+                Descripcion = "";
+
+            Empresa Proveedor = new Empresa();
+
+            Categoria pCategoria = new Categoria("Categoria01"); 
+            Categoria pSubCategoria = new Categoria("SubCategoria01");
 
             decimal PrecioCosto = 600;
             double Margen = 12, IVA = 21;
 
-            Producto producto = new Producto(Nombre, Descripcion, PrecioCosto, Margen, IVA, Proveedor, Categoria, SubCategoria);
+            Producto producto = new Producto(Nombre, Descripcion, PrecioCosto, Margen, IVA, Proveedor, pCategoria, pSubCategoria);
             
 
             Console.WriteLine("Nombre: " + producto.Nombre);

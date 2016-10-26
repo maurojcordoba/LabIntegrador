@@ -27,16 +27,16 @@ namespace Entidades
                 return PrecioBruto + Convert.ToDecimal(IVA);
             }
         }
-        public string Proveedor { get; set; }
-        public string Categoria { get; set; }
-        public string SubCategoria { get; set; }
+        public Empresa Proveedor { get; set; }
+        public Categoria Categoria { get; set; }
+        public Categoria SubCategoria { get; set; }
 
         public Producto()
         {
 
         }
 
-        public Producto(string Nombre, string Descripcion, decimal PrecioCosto, double Margen, double IVA, string Proveedor, string Categoria, string SubCategoria)
+        public Producto(string Nombre, string Descripcion, decimal PrecioCosto, double Margen, double IVA, Empresa Proveedor, Categoria Categoria, Categoria SubCategoria)
         {
             this.Nombre = Nombre;
             this.PrecioCosto = PrecioCosto;

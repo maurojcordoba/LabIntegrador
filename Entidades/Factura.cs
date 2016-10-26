@@ -10,7 +10,7 @@ namespace Entidades
     {
         public string Tipo { get; set; }
         
-        public Factura(string Tipo, string Numero, DateTime Fecha, string Cliente, string Direccion, string CondicionIVA, string Detalle, decimal Total)
+        public Factura(string Tipo, string Numero, DateTime Fecha, string Cliente, string Direccion, string CondicionIVA, List<Item> Detalle, decimal Total)
         {
             this.Tipo = Tipo;
             this.Numero = Numero;
