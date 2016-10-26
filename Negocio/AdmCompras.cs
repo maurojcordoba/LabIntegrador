@@ -7,29 +7,29 @@ using System.Threading.Tasks;
 
 namespace Negocio
 {
-    public class AdmCompras
+    public static class AdmCompras
     {
-        public void Agregar(Item item, int cantidad)
+        public static void Agregar(Item item, int cantidad)
         {
 
         }
 
-        public void Modificar(int cantidad)
+        public static void Modificar(int cantidad)
         {
 
         }
 
-        public void Eliminar(string nombre)
+        public static void Eliminar(string nombre)
         {
 
         }
 
-        public void Confirmar(Vendedor vendedor)
+        public static void Confirmar(Vendedor vendedor)
         {
 
         }
 
-        public void Cancelar()
+        public static void Cancelar()
         {
 
         }

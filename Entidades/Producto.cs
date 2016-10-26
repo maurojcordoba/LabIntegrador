@@ -12,7 +12,7 @@ namespace Entidades
         public string Descripcion { get; set; }
         public decimal PrecioCosto { get; set; }
         public double Margen { get; set; }
-        public double IVA { get; set; }
+        private static double IVA = 21.0;
         public decimal PrecioBruto
         {
             get
@@ -36,12 +36,12 @@ namespace Entidades
 
         }
 
-        public Producto(string Nombre, string Descripcion, decimal PrecioCosto, double Margen, double IVA, Empresa Proveedor, Categoria Categoria, Categoria SubCategoria)
+        public Producto(string Nombre, string Descripcion, decimal PrecioCosto, double Margen, Empresa Proveedor, Categoria Categoria, Categoria SubCategoria)
         {
             this.Nombre = Nombre;
             this.PrecioCosto = PrecioCosto;
             this.Margen = Margen;
-            this.IVA = IVA;
+         
             this.Proveedor = Proveedor;
             this.Categoria = Categoria;
             this.SubCategoria = SubCategoria;

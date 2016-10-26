@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace Negocio
 {
-    public class AdmFacturas
+    public static class AdmFacturas
     {
-        public void Generar(List<Producto> productos, ClienteIndividuo cliente) 
+        public static void Generar(List<Producto> productos, ClienteIndividuo cliente) 
         {
 
         }

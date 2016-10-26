@@ -8,31 +8,59 @@ using System.Threading.Tasks;
 
 namespace Negocio
 {
-    class AdmClientes
+    public static class AdmClientes
     {
-        public List<ClienteIndividuo> ListarClienteIndividuo()
+        public static List<ClienteIndividuo> ListarClienteIndividuo()
         {
             List<ClienteIndividuo> lista = new List<ClienteIndividuo>();
 
             return lista;
         }
 
-        public ClienteIndividuo ListarClienteIndividuo(string CUIT)
+        public static ClienteIndividuo ListarClienteIndividuo(string CUIT)
         {
             
             return new ClienteIndividuo() ;
         }
 
-        public List<Empresa> ListarClienteEmpresa()
+        public static List<Empresa> ListarClienteEmpresa()
         {
             return new List<Empresa>(); 
         }
 
-        public Empresa ListarClienteEmpresa(string CUIT)
+        public static Empresa ListarClienteEmpresa(string CUIT)
         {
             return new Empresa();
         }
 
+        public static void Agregar(ClienteIndividuo pClienteIndividuo)
+        {
 
+        }
+
+        public static void Modificar(ClienteIndividuo pClienteIndividuo)
+        {
+
+        }
+
+        public static void Eliminar(ClienteIndividuo pClienteIndividuo)
+        {
+
+        }
+
+        public static void Agregar(Empresa pEmpresa)
+        {
+
+        }
+
+        public static void Modificar(Empresa pEmpresa)
+        {
+
+        }
+
+        public static void Eliminar(Empresa pEmpresa)
+        {
+
+        }
     }
 }

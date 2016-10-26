@@ -15,7 +15,7 @@ namespace Entidades
         public string CondicionIVA;
         public string CondicionVenta;
         public List<Item> Detalle;
-        public decimal Total { get; };
+        public decimal Total { get; }
 
         public DocumentoComercial()
         {

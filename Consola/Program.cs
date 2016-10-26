@@ -26,9 +26,9 @@ namespace Consola
             Categoria pSubCategoria = new Categoria("SubCategoria01");
 
             decimal PrecioCosto = 600;
-            double Margen = 12, IVA = 21;
+            double Margen = 12;
 
-            Producto producto = new Producto(Nombre, Descripcion, PrecioCosto, Margen, IVA, Proveedor, pCategoria, pSubCategoria);
+            Producto producto = new Producto(Nombre, Descripcion, PrecioCosto, Margen, Proveedor, pCategoria, pSubCategoria);
             
 
             Console.WriteLine("Nombre: " + producto.Nombre);
@@ -39,7 +39,7 @@ namespace Consola
 
             Console.WriteLine("Margen: " + Convert.ToString(producto.Margen));
 
-            Console.WriteLine("IVA: " + Convert.ToString(producto.IVA));
+            //Console.WriteLine("IVA: " + Convert.ToString(producto.IVA));
 
             Console.WriteLine("PrecioBruto: " + Convert.ToString(producto.PrecioBruto));
             Console.WriteLine("PrecioVenta: " + Convert.ToString(producto.PrecioVenta));

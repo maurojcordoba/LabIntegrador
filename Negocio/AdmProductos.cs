@@ -6,30 +6,43 @@ using System.Threading.Tasks;
 
 namespace Negocio
 {
-    //Clase de la Fase 03
-    class AdmProductos
+    public static class AdmProductos
     {
-        public List<Producto> Listar()
+        public static List<Producto> Listar()
         {
             return new List<Producto>();
         }
 
-        //Lista de Productos
-        public List<Producto> Listar(Categoria Categoria)
+        public static List<Producto> Listar(Categoria Categoria)
         {
             return new List<Producto>();
         }
 
-        public List<Producto> Listar(Categoria Categoria, Categoria SubCategoria)
+        public static List<Producto> Listar(Categoria Categoria, Categoria SubCategoria)
         {
             return new List<Producto>();
         }
 
-        public Producto Listar(string Nombre)
+        public static Producto Listar(string Nombre)
         {
             Producto Item = new Producto();
             //...
             return Item;
+        }
+
+        public static void Agregar(Producto pProducto)
+        {
+
+        }
+
+        public static void Modificar(Producto pProducto)
+        {
+
+        }
+
+        public static void Eliminar(Producto pProducto)
+        {
+
         }
     }
 }
