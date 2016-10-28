@@ -15,7 +15,16 @@ namespace Entidades
         public string CondicionIVA;
         public string CondicionVenta;
         public List<Item> Detalle;
-        public decimal Total { get; }
+        private decimal Total {
+            get {
+                decimal importeTotal = 0;
+                foreach (Item item in Detalle)
+                {
+                    importeTotal += item.Importe;
+                }
+                return importeTotal;
+            }
+        }
 
         public DocumentoComercial()
         {
