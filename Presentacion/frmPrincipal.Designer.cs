@@ -53,6 +53,17 @@
             this.dataGridViewSeleccionarClienteIndividuo = new System.Windows.Forms.DataGridView();
             this.dataGridViewSeleccionarClienteEmpresa = new System.Windows.Forms.DataGridView();
             this.groupBoxClienteSeleccionado = new System.Windows.Forms.GroupBox();
+            this.labelNombreClienteSeleccionado = new System.Windows.Forms.Label();
+            this.labelCUITClienteSeleccionado = new System.Windows.Forms.Label();
+            this.groupBoxDatosContactoClienteSeleccionado = new System.Windows.Forms.GroupBox();
+            this.labelEmailClienteSeleccionado = new System.Windows.Forms.Label();
+            this.labelTelefonoClienteSeleccionado = new System.Windows.Forms.Label();
+            this.labelDireccionClienteSeccionado = new System.Windows.Forms.Label();
+            this.groupBoxDatosContactoClienteSelecionado = new System.Windows.Forms.GroupBox();
+            this.labelContacto = new System.Windows.Forms.Label();
+            this.labelContactoEmail = new System.Windows.Forms.Label();
+            this.labelContactoTelefono = new System.Windows.Forms.Label();
+            this.labelContactoDireccion = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPageVentas.SuspendLayout();
@@ -68,6 +79,9 @@
             this.tabPageSeleccionarClienteEmpresa.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSeleccionarClienteIndividuo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSeleccionarClienteEmpresa)).BeginInit();
+            this.groupBoxClienteSeleccionado.SuspendLayout();
+            this.groupBoxDatosContactoClienteSeleccionado.SuspendLayout();
+            this.groupBoxDatosContactoClienteSelecionado.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -76,7 +90,7 @@
             this.archivoToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(576, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(577, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -98,9 +112,9 @@
             // 
             // statusStrip1
             // 
-            this.statusStrip1.Location = new System.Drawing.Point(0, 392);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 406);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(576, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(577, 22);
             this.statusStrip1.TabIndex = 1;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -115,7 +129,7 @@
             this.tabControl1.Location = new System.Drawing.Point(0, 24);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(576, 368);
+            this.tabControl1.Size = new System.Drawing.Size(577, 382);
             this.tabControl1.TabIndex = 2;
             // 
             // tabPageVentas
@@ -125,7 +139,7 @@
             this.tabPageVentas.Location = new System.Drawing.Point(4, 22);
             this.tabPageVentas.Name = "tabPageVentas";
             this.tabPageVentas.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageVentas.Size = new System.Drawing.Size(568, 342);
+            this.tabPageVentas.Size = new System.Drawing.Size(569, 356);
             this.tabPageVentas.TabIndex = 1;
             this.tabPageVentas.Text = "Ventas";
             this.tabPageVentas.UseVisualStyleBackColor = true;
@@ -175,7 +189,7 @@
             this.toolStripButtonCerrar});
             this.toolStripVentas.Location = new System.Drawing.Point(3, 3);
             this.toolStripVentas.Name = "toolStripVentas";
-            this.toolStripVentas.Size = new System.Drawing.Size(562, 25);
+            this.toolStripVentas.Size = new System.Drawing.Size(563, 25);
             this.toolStripVentas.TabIndex = 0;
             this.toolStripVentas.Text = "toolStrip1";
             // 
@@ -220,7 +234,7 @@
             this.tabControlVentas.Location = new System.Drawing.Point(3, 28);
             this.tabControlVentas.Name = "tabControlVentas";
             this.tabControlVentas.SelectedIndex = 0;
-            this.tabControlVentas.Size = new System.Drawing.Size(562, 311);
+            this.tabControlVentas.Size = new System.Drawing.Size(563, 325);
             this.tabControlVentas.TabIndex = 1;
             // 
             // tabPageSeleccionarCliente
@@ -229,7 +243,7 @@
             this.tabPageSeleccionarCliente.Location = new System.Drawing.Point(4, 4);
             this.tabPageSeleccionarCliente.Name = "tabPageSeleccionarCliente";
             this.tabPageSeleccionarCliente.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageSeleccionarCliente.Size = new System.Drawing.Size(554, 285);
+            this.tabPageSeleccionarCliente.Size = new System.Drawing.Size(555, 299);
             this.tabPageSeleccionarCliente.TabIndex = 0;
             this.tabPageSeleccionarCliente.Text = "Seleccionar cliente";
             this.tabPageSeleccionarCliente.UseVisualStyleBackColor = true;
@@ -256,9 +270,11 @@
             // 
             // splitContainerSeleccionarCliente.Panel2
             // 
+            this.splitContainerSeleccionarCliente.Panel2.Controls.Add(this.groupBoxDatosContactoClienteSelecionado);
+            this.splitContainerSeleccionarCliente.Panel2.Controls.Add(this.groupBoxDatosContactoClienteSeleccionado);
             this.splitContainerSeleccionarCliente.Panel2.Controls.Add(this.groupBoxClienteSeleccionado);
-            this.splitContainerSeleccionarCliente.Size = new System.Drawing.Size(548, 279);
-            this.splitContainerSeleccionarCliente.SplitterDistance = 182;
+            this.splitContainerSeleccionarCliente.Size = new System.Drawing.Size(549, 293);
+            this.splitContainerSeleccionarCliente.SplitterDistance = 183;
             this.splitContainerSeleccionarCliente.TabIndex = 0;
             // 
             // tabControlSeleccionarCliente
@@ -270,7 +286,7 @@
             this.tabControlSeleccionarCliente.Multiline = true;
             this.tabControlSeleccionarCliente.Name = "tabControlSeleccionarCliente";
             this.tabControlSeleccionarCliente.SelectedIndex = 0;
-            this.tabControlSeleccionarCliente.Size = new System.Drawing.Size(182, 279);
+            this.tabControlSeleccionarCliente.Size = new System.Drawing.Size(183, 293);
             this.tabControlSeleccionarCliente.TabIndex = 0;
             // 
             // tabPageSeleccionarClienteIndividuo
@@ -290,7 +306,7 @@
             this.tabPageSeleccionarClienteEmpresa.Location = new System.Drawing.Point(4, 22);
             this.tabPageSeleccionarClienteEmpresa.Name = "tabPageSeleccionarClienteEmpresa";
             this.tabPageSeleccionarClienteEmpresa.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageSeleccionarClienteEmpresa.Size = new System.Drawing.Size(174, 253);
+            this.tabPageSeleccionarClienteEmpresa.Size = new System.Drawing.Size(175, 267);
             this.tabPageSeleccionarClienteEmpresa.TabIndex = 1;
             this.tabPageSeleccionarClienteEmpresa.Text = "Empresa";
             this.tabPageSeleccionarClienteEmpresa.UseVisualStyleBackColor = true;
@@ -310,31 +326,143 @@
             this.dataGridViewSeleccionarClienteEmpresa.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridViewSeleccionarClienteEmpresa.Location = new System.Drawing.Point(3, 3);
             this.dataGridViewSeleccionarClienteEmpresa.Name = "dataGridViewSeleccionarClienteEmpresa";
-            this.dataGridViewSeleccionarClienteEmpresa.Size = new System.Drawing.Size(168, 247);
+            this.dataGridViewSeleccionarClienteEmpresa.Size = new System.Drawing.Size(169, 261);
             this.dataGridViewSeleccionarClienteEmpresa.TabIndex = 0;
             // 
             // groupBoxClienteSeleccionado
             // 
             this.groupBoxClienteSeleccionado.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBoxClienteSeleccionado.Controls.Add(this.labelCUITClienteSeleccionado);
+            this.groupBoxClienteSeleccionado.Controls.Add(this.labelNombreClienteSeleccionado);
             this.groupBoxClienteSeleccionado.Location = new System.Drawing.Point(26, 22);
             this.groupBoxClienteSeleccionado.Name = "groupBoxClienteSeleccionado";
-            this.groupBoxClienteSeleccionado.Size = new System.Drawing.Size(317, 100);
+            this.groupBoxClienteSeleccionado.Size = new System.Drawing.Size(317, 63);
             this.groupBoxClienteSeleccionado.TabIndex = 0;
             this.groupBoxClienteSeleccionado.TabStop = false;
             this.groupBoxClienteSeleccionado.Text = "Cliente seleccionado";
+            // 
+            // labelNombreClienteSeleccionado
+            // 
+            this.labelNombreClienteSeleccionado.AutoSize = true;
+            this.labelNombreClienteSeleccionado.Location = new System.Drawing.Point(18, 16);
+            this.labelNombreClienteSeleccionado.Name = "labelNombreClienteSeleccionado";
+            this.labelNombreClienteSeleccionado.Size = new System.Drawing.Size(44, 13);
+            this.labelNombreClienteSeleccionado.TabIndex = 0;
+            this.labelNombreClienteSeleccionado.Text = "Nombre";
+            // 
+            // labelCUITClienteSeleccionado
+            // 
+            this.labelCUITClienteSeleccionado.AutoSize = true;
+            this.labelCUITClienteSeleccionado.Location = new System.Drawing.Point(18, 38);
+            this.labelCUITClienteSeleccionado.Name = "labelCUITClienteSeleccionado";
+            this.labelCUITClienteSeleccionado.Size = new System.Drawing.Size(44, 13);
+            this.labelCUITClienteSeleccionado.TabIndex = 1;
+            this.labelCUITClienteSeleccionado.Text = "C.U.I.T.";
+            // 
+            // groupBoxDatosContactoClienteSeleccionado
+            // 
+            this.groupBoxDatosContactoClienteSeleccionado.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBoxDatosContactoClienteSeleccionado.Controls.Add(this.labelDireccionClienteSeccionado);
+            this.groupBoxDatosContactoClienteSeleccionado.Controls.Add(this.labelTelefonoClienteSeleccionado);
+            this.groupBoxDatosContactoClienteSeleccionado.Controls.Add(this.labelEmailClienteSeleccionado);
+            this.groupBoxDatosContactoClienteSeleccionado.Location = new System.Drawing.Point(26, 91);
+            this.groupBoxDatosContactoClienteSeleccionado.Name = "groupBoxDatosContactoClienteSeleccionado";
+            this.groupBoxDatosContactoClienteSeleccionado.Size = new System.Drawing.Size(317, 85);
+            this.groupBoxDatosContactoClienteSeleccionado.TabIndex = 1;
+            this.groupBoxDatosContactoClienteSeleccionado.TabStop = false;
+            this.groupBoxDatosContactoClienteSeleccionado.Text = "Información de contacto";
+            // 
+            // labelEmailClienteSeleccionado
+            // 
+            this.labelEmailClienteSeleccionado.AutoSize = true;
+            this.labelEmailClienteSeleccionado.Location = new System.Drawing.Point(18, 16);
+            this.labelEmailClienteSeleccionado.Name = "labelEmailClienteSeleccionado";
+            this.labelEmailClienteSeleccionado.Size = new System.Drawing.Size(32, 13);
+            this.labelEmailClienteSeleccionado.TabIndex = 0;
+            this.labelEmailClienteSeleccionado.Text = "Email";
+            // 
+            // labelTelefonoClienteSeleccionado
+            // 
+            this.labelTelefonoClienteSeleccionado.AutoSize = true;
+            this.labelTelefonoClienteSeleccionado.Location = new System.Drawing.Point(18, 38);
+            this.labelTelefonoClienteSeleccionado.Name = "labelTelefonoClienteSeleccionado";
+            this.labelTelefonoClienteSeleccionado.Size = new System.Drawing.Size(49, 13);
+            this.labelTelefonoClienteSeleccionado.TabIndex = 1;
+            this.labelTelefonoClienteSeleccionado.Text = "Teléfono";
+            // 
+            // labelDireccionClienteSeccionado
+            // 
+            this.labelDireccionClienteSeccionado.AutoSize = true;
+            this.labelDireccionClienteSeccionado.Location = new System.Drawing.Point(18, 60);
+            this.labelDireccionClienteSeccionado.Name = "labelDireccionClienteSeccionado";
+            this.labelDireccionClienteSeccionado.Size = new System.Drawing.Size(52, 13);
+            this.labelDireccionClienteSeccionado.TabIndex = 2;
+            this.labelDireccionClienteSeccionado.Text = "Dirección";
+            // 
+            // groupBoxDatosContactoClienteSelecionado
+            // 
+            this.groupBoxDatosContactoClienteSelecionado.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBoxDatosContactoClienteSelecionado.Controls.Add(this.labelContactoDireccion);
+            this.groupBoxDatosContactoClienteSelecionado.Controls.Add(this.labelContactoTelefono);
+            this.groupBoxDatosContactoClienteSelecionado.Controls.Add(this.labelContactoEmail);
+            this.groupBoxDatosContactoClienteSelecionado.Controls.Add(this.labelContacto);
+            this.groupBoxDatosContactoClienteSelecionado.Location = new System.Drawing.Point(26, 182);
+            this.groupBoxDatosContactoClienteSelecionado.Name = "groupBoxDatosContactoClienteSelecionado";
+            this.groupBoxDatosContactoClienteSelecionado.Size = new System.Drawing.Size(317, 104);
+            this.groupBoxDatosContactoClienteSelecionado.TabIndex = 3;
+            this.groupBoxDatosContactoClienteSelecionado.TabStop = false;
+            this.groupBoxDatosContactoClienteSelecionado.Text = "Persona de contacto";
+            // 
+            // labelContacto
+            // 
+            this.labelContacto.AutoSize = true;
+            this.labelContacto.Location = new System.Drawing.Point(18, 20);
+            this.labelContacto.Name = "labelContacto";
+            this.labelContacto.Size = new System.Drawing.Size(44, 13);
+            this.labelContacto.TabIndex = 0;
+            this.labelContacto.Text = "Nombre";
+            // 
+            // labelContactoEmail
+            // 
+            this.labelContactoEmail.AutoSize = true;
+            this.labelContactoEmail.Location = new System.Drawing.Point(18, 37);
+            this.labelContactoEmail.Name = "labelContactoEmail";
+            this.labelContactoEmail.Size = new System.Drawing.Size(32, 13);
+            this.labelContactoEmail.TabIndex = 1;
+            this.labelContactoEmail.Text = "Email";
+            // 
+            // labelContactoTelefono
+            // 
+            this.labelContactoTelefono.AutoSize = true;
+            this.labelContactoTelefono.Location = new System.Drawing.Point(18, 54);
+            this.labelContactoTelefono.Name = "labelContactoTelefono";
+            this.labelContactoTelefono.Size = new System.Drawing.Size(49, 13);
+            this.labelContactoTelefono.TabIndex = 2;
+            this.labelContactoTelefono.Text = "Teléfono";
+            // 
+            // labelContactoDireccion
+            // 
+            this.labelContactoDireccion.AutoSize = true;
+            this.labelContactoDireccion.Location = new System.Drawing.Point(18, 71);
+            this.labelContactoDireccion.Name = "labelContactoDireccion";
+            this.labelContactoDireccion.Size = new System.Drawing.Size(52, 13);
+            this.labelContactoDireccion.TabIndex = 3;
+            this.labelContactoDireccion.Text = "Dirección";
             // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(576, 414);
+            this.ClientSize = new System.Drawing.Size(577, 428);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmPrincipal";
-            this.Text = "Form1";
+            this.Text = " ";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -354,6 +482,12 @@
             this.tabPageSeleccionarClienteEmpresa.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSeleccionarClienteIndividuo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSeleccionarClienteEmpresa)).EndInit();
+            this.groupBoxClienteSeleccionado.ResumeLayout(false);
+            this.groupBoxClienteSeleccionado.PerformLayout();
+            this.groupBoxDatosContactoClienteSeleccionado.ResumeLayout(false);
+            this.groupBoxDatosContactoClienteSeleccionado.PerformLayout();
+            this.groupBoxDatosContactoClienteSelecionado.ResumeLayout(false);
+            this.groupBoxDatosContactoClienteSelecionado.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -385,6 +519,17 @@
         private System.Windows.Forms.DataGridView dataGridViewSeleccionarClienteIndividuo;
         private System.Windows.Forms.DataGridView dataGridViewSeleccionarClienteEmpresa;
         private System.Windows.Forms.GroupBox groupBoxClienteSeleccionado;
+        private System.Windows.Forms.Label labelCUITClienteSeleccionado;
+        private System.Windows.Forms.Label labelNombreClienteSeleccionado;
+        private System.Windows.Forms.GroupBox groupBoxDatosContactoClienteSeleccionado;
+        private System.Windows.Forms.Label labelDireccionClienteSeccionado;
+        private System.Windows.Forms.Label labelTelefonoClienteSeleccionado;
+        private System.Windows.Forms.Label labelEmailClienteSeleccionado;
+        private System.Windows.Forms.GroupBox groupBoxDatosContactoClienteSelecionado;
+        private System.Windows.Forms.Label labelContactoTelefono;
+        private System.Windows.Forms.Label labelContactoEmail;
+        private System.Windows.Forms.Label labelContacto;
+        private System.Windows.Forms.Label labelContactoDireccion;
     }
 }
 
