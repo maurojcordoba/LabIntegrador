@@ -29,5 +29,10 @@ namespace Presentacion
         {
             frmPrincipal.ActiveForm.Close();
         }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

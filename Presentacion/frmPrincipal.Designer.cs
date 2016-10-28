@@ -64,12 +64,26 @@
             this.labelContactoEmail = new System.Windows.Forms.Label();
             this.labelContactoTelefono = new System.Windows.Forms.Label();
             this.labelContactoDireccion = new System.Windows.Forms.Label();
+            this.splitContainerConfigurarPedido = new System.Windows.Forms.SplitContainer();
+            this.panelCategorias = new System.Windows.Forms.Panel();
+            this.comboBoxCategoria = new System.Windows.Forms.ComboBox();
+            this.comboBoxSubcategoria = new System.Windows.Forms.ComboBox();
+            this.dataGridViewPedidoProductos = new System.Windows.Forms.DataGridView();
+            this.panelCondiciones = new System.Windows.Forms.Panel();
+            this.labelCondicionIVA = new System.Windows.Forms.Label();
+            this.labelCondicionVenta = new System.Windows.Forms.Label();
+            this.comboBoxCondicionIVA = new System.Windows.Forms.ComboBox();
+            this.comboBoxCondicionVenta = new System.Windows.Forms.ComboBox();
+            this.panelTotal = new System.Windows.Forms.Panel();
+            this.labelTotal = new System.Windows.Forms.Label();
+            this.dataGridViewPedido = new System.Windows.Forms.DataGridView();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPageVentas.SuspendLayout();
             this.toolStripVentas.SuspendLayout();
             this.tabControlVentas.SuspendLayout();
             this.tabPageSeleccionarCliente.SuspendLayout();
+            this.tabPageConfigurarPedido.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerSeleccionarCliente)).BeginInit();
             this.splitContainerSeleccionarCliente.Panel1.SuspendLayout();
             this.splitContainerSeleccionarCliente.Panel2.SuspendLayout();
@@ -82,6 +96,15 @@
             this.groupBoxClienteSeleccionado.SuspendLayout();
             this.groupBoxDatosContactoClienteSeleccionado.SuspendLayout();
             this.groupBoxDatosContactoClienteSelecionado.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainerConfigurarPedido)).BeginInit();
+            this.splitContainerConfigurarPedido.Panel1.SuspendLayout();
+            this.splitContainerConfigurarPedido.Panel2.SuspendLayout();
+            this.splitContainerConfigurarPedido.SuspendLayout();
+            this.panelCategorias.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPedidoProductos)).BeginInit();
+            this.panelCondiciones.SuspendLayout();
+            this.panelTotal.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPedido)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -148,7 +171,7 @@
             // 
             this.tabPageProductos.Location = new System.Drawing.Point(4, 22);
             this.tabPageProductos.Name = "tabPageProductos";
-            this.tabPageProductos.Size = new System.Drawing.Size(386, 276);
+            this.tabPageProductos.Size = new System.Drawing.Size(569, 356);
             this.tabPageProductos.TabIndex = 2;
             this.tabPageProductos.Text = "Productos";
             this.tabPageProductos.UseVisualStyleBackColor = true;
@@ -250,10 +273,11 @@
             // 
             // tabPageConfigurarPedido
             // 
+            this.tabPageConfigurarPedido.Controls.Add(this.splitContainerConfigurarPedido);
             this.tabPageConfigurarPedido.Location = new System.Drawing.Point(4, 4);
             this.tabPageConfigurarPedido.Name = "tabPageConfigurarPedido";
             this.tabPageConfigurarPedido.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageConfigurarPedido.Size = new System.Drawing.Size(518, 225);
+            this.tabPageConfigurarPedido.Size = new System.Drawing.Size(555, 299);
             this.tabPageConfigurarPedido.TabIndex = 1;
             this.tabPageConfigurarPedido.Text = "Configurar pedido";
             this.tabPageConfigurarPedido.UseVisualStyleBackColor = true;
@@ -452,6 +476,154 @@
             this.labelContactoDireccion.TabIndex = 3;
             this.labelContactoDireccion.Text = "Dirección";
             // 
+            // splitContainerConfigurarPedido
+            // 
+            this.splitContainerConfigurarPedido.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainerConfigurarPedido.Location = new System.Drawing.Point(3, 3);
+            this.splitContainerConfigurarPedido.Name = "splitContainerConfigurarPedido";
+            // 
+            // splitContainerConfigurarPedido.Panel1
+            // 
+            this.splitContainerConfigurarPedido.Panel1.Controls.Add(this.dataGridViewPedidoProductos);
+            this.splitContainerConfigurarPedido.Panel1.Controls.Add(this.panelCategorias);
+            // 
+            // splitContainerConfigurarPedido.Panel2
+            // 
+            this.splitContainerConfigurarPedido.Panel2.Controls.Add(this.dataGridViewPedido);
+            this.splitContainerConfigurarPedido.Panel2.Controls.Add(this.panelTotal);
+            this.splitContainerConfigurarPedido.Panel2.Controls.Add(this.panelCondiciones);
+            this.splitContainerConfigurarPedido.Size = new System.Drawing.Size(549, 293);
+            this.splitContainerConfigurarPedido.SplitterDistance = 183;
+            this.splitContainerConfigurarPedido.TabIndex = 0;
+            // 
+            // panelCategorias
+            // 
+            this.panelCategorias.Controls.Add(this.comboBoxSubcategoria);
+            this.panelCategorias.Controls.Add(this.comboBoxCategoria);
+            this.panelCategorias.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelCategorias.Location = new System.Drawing.Point(0, 0);
+            this.panelCategorias.Name = "panelCategorias";
+            this.panelCategorias.Size = new System.Drawing.Size(183, 100);
+            this.panelCategorias.TabIndex = 0;
+            // 
+            // comboBoxCategoria
+            // 
+            this.comboBoxCategoria.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBoxCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxCategoria.FormattingEnabled = true;
+            this.comboBoxCategoria.Location = new System.Drawing.Point(21, 18);
+            this.comboBoxCategoria.Name = "comboBoxCategoria";
+            this.comboBoxCategoria.Size = new System.Drawing.Size(142, 21);
+            this.comboBoxCategoria.TabIndex = 0;
+            // 
+            // comboBoxSubcategoria
+            // 
+            this.comboBoxSubcategoria.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBoxSubcategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxSubcategoria.FormattingEnabled = true;
+            this.comboBoxSubcategoria.Location = new System.Drawing.Point(21, 46);
+            this.comboBoxSubcategoria.Name = "comboBoxSubcategoria";
+            this.comboBoxSubcategoria.Size = new System.Drawing.Size(142, 21);
+            this.comboBoxSubcategoria.TabIndex = 1;
+            // 
+            // dataGridViewPedidoProductos
+            // 
+            this.dataGridViewPedidoProductos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridViewPedidoProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewPedidoProductos.Location = new System.Drawing.Point(21, 106);
+            this.dataGridViewPedidoProductos.Name = "dataGridViewPedidoProductos";
+            this.dataGridViewPedidoProductos.Size = new System.Drawing.Size(142, 164);
+            this.dataGridViewPedidoProductos.TabIndex = 1;
+            // 
+            // panelCondiciones
+            // 
+            this.panelCondiciones.Controls.Add(this.comboBoxCondicionVenta);
+            this.panelCondiciones.Controls.Add(this.comboBoxCondicionIVA);
+            this.panelCondiciones.Controls.Add(this.labelCondicionVenta);
+            this.panelCondiciones.Controls.Add(this.labelCondicionIVA);
+            this.panelCondiciones.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelCondiciones.Location = new System.Drawing.Point(0, 0);
+            this.panelCondiciones.Name = "panelCondiciones";
+            this.panelCondiciones.Size = new System.Drawing.Size(362, 81);
+            this.panelCondiciones.TabIndex = 0;
+            // 
+            // labelCondicionIVA
+            // 
+            this.labelCondicionIVA.AutoSize = true;
+            this.labelCondicionIVA.Location = new System.Drawing.Point(22, 18);
+            this.labelCondicionIVA.Name = "labelCondicionIVA";
+            this.labelCondicionIVA.Size = new System.Drawing.Size(115, 13);
+            this.labelCondicionIVA.TabIndex = 0;
+            this.labelCondicionIVA.Text = "Condición frente al IVA";
+            // 
+            // labelCondicionVenta
+            // 
+            this.labelCondicionVenta.AutoSize = true;
+            this.labelCondicionVenta.Location = new System.Drawing.Point(22, 46);
+            this.labelCondicionVenta.Name = "labelCondicionVenta";
+            this.labelCondicionVenta.Size = new System.Drawing.Size(100, 13);
+            this.labelCondicionVenta.TabIndex = 1;
+            this.labelCondicionVenta.Text = "Condición de Venta";
+            // 
+            // comboBoxCondicionIVA
+            // 
+            this.comboBoxCondicionIVA.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBoxCondicionIVA.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxCondicionIVA.FormattingEnabled = true;
+            this.comboBoxCondicionIVA.Location = new System.Drawing.Point(143, 15);
+            this.comboBoxCondicionIVA.Name = "comboBoxCondicionIVA";
+            this.comboBoxCondicionIVA.Size = new System.Drawing.Size(192, 21);
+            this.comboBoxCondicionIVA.TabIndex = 2;
+            this.comboBoxCondicionIVA.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // comboBoxCondicionVenta
+            // 
+            this.comboBoxCondicionVenta.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBoxCondicionVenta.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxCondicionVenta.FormattingEnabled = true;
+            this.comboBoxCondicionVenta.Location = new System.Drawing.Point(143, 43);
+            this.comboBoxCondicionVenta.Name = "comboBoxCondicionVenta";
+            this.comboBoxCondicionVenta.Size = new System.Drawing.Size(192, 21);
+            this.comboBoxCondicionVenta.TabIndex = 3;
+            // 
+            // panelTotal
+            // 
+            this.panelTotal.Controls.Add(this.labelTotal);
+            this.panelTotal.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelTotal.Location = new System.Drawing.Point(0, 231);
+            this.panelTotal.Name = "panelTotal";
+            this.panelTotal.Size = new System.Drawing.Size(362, 62);
+            this.panelTotal.TabIndex = 1;
+            // 
+            // labelTotal
+            // 
+            this.labelTotal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelTotal.AutoSize = true;
+            this.labelTotal.Location = new System.Drawing.Point(296, 26);
+            this.labelTotal.Name = "labelTotal";
+            this.labelTotal.Size = new System.Drawing.Size(31, 13);
+            this.labelTotal.TabIndex = 0;
+            this.labelTotal.Text = "Total";
+            // 
+            // dataGridViewPedido
+            // 
+            this.dataGridViewPedido.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridViewPedido.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewPedido.Location = new System.Drawing.Point(25, 106);
+            this.dataGridViewPedido.Name = "dataGridViewPedido";
+            this.dataGridViewPedido.Size = new System.Drawing.Size(310, 102);
+            this.dataGridViewPedido.TabIndex = 2;
+            // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -473,6 +645,7 @@
             this.toolStripVentas.PerformLayout();
             this.tabControlVentas.ResumeLayout(false);
             this.tabPageSeleccionarCliente.ResumeLayout(false);
+            this.tabPageConfigurarPedido.ResumeLayout(false);
             this.splitContainerSeleccionarCliente.Panel1.ResumeLayout(false);
             this.splitContainerSeleccionarCliente.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerSeleccionarCliente)).EndInit();
@@ -488,6 +661,17 @@
             this.groupBoxDatosContactoClienteSeleccionado.PerformLayout();
             this.groupBoxDatosContactoClienteSelecionado.ResumeLayout(false);
             this.groupBoxDatosContactoClienteSelecionado.PerformLayout();
+            this.splitContainerConfigurarPedido.Panel1.ResumeLayout(false);
+            this.splitContainerConfigurarPedido.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainerConfigurarPedido)).EndInit();
+            this.splitContainerConfigurarPedido.ResumeLayout(false);
+            this.panelCategorias.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPedidoProductos)).EndInit();
+            this.panelCondiciones.ResumeLayout(false);
+            this.panelCondiciones.PerformLayout();
+            this.panelTotal.ResumeLayout(false);
+            this.panelTotal.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPedido)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -530,6 +714,19 @@
         private System.Windows.Forms.Label labelContactoEmail;
         private System.Windows.Forms.Label labelContacto;
         private System.Windows.Forms.Label labelContactoDireccion;
+        private System.Windows.Forms.SplitContainer splitContainerConfigurarPedido;
+        private System.Windows.Forms.DataGridView dataGridViewPedidoProductos;
+        private System.Windows.Forms.Panel panelCategorias;
+        private System.Windows.Forms.ComboBox comboBoxSubcategoria;
+        private System.Windows.Forms.ComboBox comboBoxCategoria;
+        private System.Windows.Forms.Panel panelCondiciones;
+        private System.Windows.Forms.Label labelCondicionIVA;
+        private System.Windows.Forms.Label labelCondicionVenta;
+        private System.Windows.Forms.ComboBox comboBoxCondicionIVA;
+        private System.Windows.Forms.ComboBox comboBoxCondicionVenta;
+        private System.Windows.Forms.DataGridView dataGridViewPedido;
+        private System.Windows.Forms.Panel panelTotal;
+        private System.Windows.Forms.Label labelTotal;
     }
 }
 
