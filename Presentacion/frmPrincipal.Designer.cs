@@ -35,76 +35,94 @@
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPageVentas = new System.Windows.Forms.TabPage();
-            this.tabPageProductos = new System.Windows.Forms.TabPage();
-            this.tabPageClientes = new System.Windows.Forms.TabPage();
-            this.tabPageProveedores = new System.Windows.Forms.TabPage();
-            this.tabPageFacturas = new System.Windows.Forms.TabPage();
+            this.tabControlVentas = new System.Windows.Forms.TabControl();
+            this.tabPageSeleccionarCliente = new System.Windows.Forms.TabPage();
+            this.splitContainerSeleccionarCliente = new System.Windows.Forms.SplitContainer();
+            this.tabControlSeleccionarCliente = new System.Windows.Forms.TabControl();
+            this.tabPageSeleccionarClienteIndividuo = new System.Windows.Forms.TabPage();
+            this.dataGridViewSeleccionarClienteIndividuo = new System.Windows.Forms.DataGridView();
+            this.tabPageSeleccionarClienteEmpresa = new System.Windows.Forms.TabPage();
+            this.dataGridViewSeleccionarClienteEmpresa = new System.Windows.Forms.DataGridView();
+            this.groupBoxDatosContactoClienteSelecionado = new System.Windows.Forms.GroupBox();
+            this.labelContactoDireccion = new System.Windows.Forms.Label();
+            this.labelContactoTelefono = new System.Windows.Forms.Label();
+            this.labelContactoEmail = new System.Windows.Forms.Label();
+            this.labelContacto = new System.Windows.Forms.Label();
+            this.groupBoxDatosContactoClienteSeleccionado = new System.Windows.Forms.GroupBox();
+            this.labelDireccionClienteSeccionado = new System.Windows.Forms.Label();
+            this.labelTelefonoClienteSeleccionado = new System.Windows.Forms.Label();
+            this.labelEmailClienteSeleccionado = new System.Windows.Forms.Label();
+            this.groupBoxClienteSeleccionado = new System.Windows.Forms.GroupBox();
+            this.labelCUITClienteSeleccionado = new System.Windows.Forms.Label();
+            this.labelNombreClienteSeleccionado = new System.Windows.Forms.Label();
+            this.tabPageConfigurarPedido = new System.Windows.Forms.TabPage();
+            this.splitContainerConfigurarPedido = new System.Windows.Forms.SplitContainer();
+            this.dataGridViewPedidoProductos = new System.Windows.Forms.DataGridView();
+            this.panelCategorias = new System.Windows.Forms.Panel();
+            this.comboBoxSubcategoria = new System.Windows.Forms.ComboBox();
+            this.comboBoxCategoria = new System.Windows.Forms.ComboBox();
+            this.dataGridViewPedido = new System.Windows.Forms.DataGridView();
+            this.panelTotal = new System.Windows.Forms.Panel();
+            this.labelTotal = new System.Windows.Forms.Label();
+            this.panelCondiciones = new System.Windows.Forms.Panel();
+            this.comboBoxCondicionVenta = new System.Windows.Forms.ComboBox();
+            this.comboBoxCondicionIVA = new System.Windows.Forms.ComboBox();
+            this.labelCondicionVenta = new System.Windows.Forms.Label();
+            this.labelCondicionIVA = new System.Windows.Forms.Label();
             this.toolStripVentas = new System.Windows.Forms.ToolStrip();
             this.toolStripButtonAbrir = new System.Windows.Forms.ToolStripButton();
             this.toolStripButtonCancela = new System.Windows.Forms.ToolStripButton();
             this.toolStripButtonCerrar = new System.Windows.Forms.ToolStripButton();
-            this.tabControlVentas = new System.Windows.Forms.TabControl();
-            this.tabPageSeleccionarCliente = new System.Windows.Forms.TabPage();
-            this.tabPageConfigurarPedido = new System.Windows.Forms.TabPage();
-            this.splitContainerSeleccionarCliente = new System.Windows.Forms.SplitContainer();
-            this.tabControlSeleccionarCliente = new System.Windows.Forms.TabControl();
-            this.tabPageSeleccionarClienteIndividuo = new System.Windows.Forms.TabPage();
-            this.tabPageSeleccionarClienteEmpresa = new System.Windows.Forms.TabPage();
-            this.dataGridViewSeleccionarClienteIndividuo = new System.Windows.Forms.DataGridView();
-            this.dataGridViewSeleccionarClienteEmpresa = new System.Windows.Forms.DataGridView();
-            this.groupBoxClienteSeleccionado = new System.Windows.Forms.GroupBox();
-            this.labelNombreClienteSeleccionado = new System.Windows.Forms.Label();
-            this.labelCUITClienteSeleccionado = new System.Windows.Forms.Label();
-            this.groupBoxDatosContactoClienteSeleccionado = new System.Windows.Forms.GroupBox();
-            this.labelEmailClienteSeleccionado = new System.Windows.Forms.Label();
-            this.labelTelefonoClienteSeleccionado = new System.Windows.Forms.Label();
-            this.labelDireccionClienteSeccionado = new System.Windows.Forms.Label();
-            this.groupBoxDatosContactoClienteSelecionado = new System.Windows.Forms.GroupBox();
-            this.labelContacto = new System.Windows.Forms.Label();
-            this.labelContactoEmail = new System.Windows.Forms.Label();
-            this.labelContactoTelefono = new System.Windows.Forms.Label();
-            this.labelContactoDireccion = new System.Windows.Forms.Label();
-            this.splitContainerConfigurarPedido = new System.Windows.Forms.SplitContainer();
-            this.panelCategorias = new System.Windows.Forms.Panel();
-            this.comboBoxCategoria = new System.Windows.Forms.ComboBox();
-            this.comboBoxSubcategoria = new System.Windows.Forms.ComboBox();
-            this.dataGridViewPedidoProductos = new System.Windows.Forms.DataGridView();
-            this.panelCondiciones = new System.Windows.Forms.Panel();
-            this.labelCondicionIVA = new System.Windows.Forms.Label();
-            this.labelCondicionVenta = new System.Windows.Forms.Label();
-            this.comboBoxCondicionIVA = new System.Windows.Forms.ComboBox();
-            this.comboBoxCondicionVenta = new System.Windows.Forms.ComboBox();
-            this.panelTotal = new System.Windows.Forms.Panel();
-            this.labelTotal = new System.Windows.Forms.Label();
-            this.dataGridViewPedido = new System.Windows.Forms.DataGridView();
+            this.tabPageProductos = new System.Windows.Forms.TabPage();
+            this.tabPageClientes = new System.Windows.Forms.TabPage();
+            this.tabPageProveedores = new System.Windows.Forms.TabPage();
+            this.tabPageFacturas = new System.Windows.Forms.TabPage();
+            this.toolStripProductos = new System.Windows.Forms.ToolStrip();
+            this.toolStripButtonAgregarProducto = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButtonModificarProducto = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButtonEliminarProducto = new System.Windows.Forms.ToolStripButton();
+            this.dataGridViewProductos = new System.Windows.Forms.DataGridView();
+            this.toolStriplClientes = new System.Windows.Forms.ToolStrip();
+            this.toolStripButtonAgregarCliente = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButtonModificarCliente = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButtonEliminarCliente = new System.Windows.Forms.ToolStripButton();
+            this.tabControl2 = new System.Windows.Forms.TabControl();
+            this.tabPageClienteIndividuo = new System.Windows.Forms.TabPage();
+            this.tabPageClienteEmpresa = new System.Windows.Forms.TabPage();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPageVentas.SuspendLayout();
-            this.toolStripVentas.SuspendLayout();
             this.tabControlVentas.SuspendLayout();
             this.tabPageSeleccionarCliente.SuspendLayout();
-            this.tabPageConfigurarPedido.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerSeleccionarCliente)).BeginInit();
             this.splitContainerSeleccionarCliente.Panel1.SuspendLayout();
             this.splitContainerSeleccionarCliente.Panel2.SuspendLayout();
             this.splitContainerSeleccionarCliente.SuspendLayout();
             this.tabControlSeleccionarCliente.SuspendLayout();
             this.tabPageSeleccionarClienteIndividuo.SuspendLayout();
-            this.tabPageSeleccionarClienteEmpresa.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSeleccionarClienteIndividuo)).BeginInit();
+            this.tabPageSeleccionarClienteEmpresa.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSeleccionarClienteEmpresa)).BeginInit();
-            this.groupBoxClienteSeleccionado.SuspendLayout();
-            this.groupBoxDatosContactoClienteSeleccionado.SuspendLayout();
             this.groupBoxDatosContactoClienteSelecionado.SuspendLayout();
+            this.groupBoxDatosContactoClienteSeleccionado.SuspendLayout();
+            this.groupBoxClienteSeleccionado.SuspendLayout();
+            this.tabPageConfigurarPedido.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerConfigurarPedido)).BeginInit();
             this.splitContainerConfigurarPedido.Panel1.SuspendLayout();
             this.splitContainerConfigurarPedido.Panel2.SuspendLayout();
             this.splitContainerConfigurarPedido.SuspendLayout();
-            this.panelCategorias.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPedidoProductos)).BeginInit();
-            this.panelCondiciones.SuspendLayout();
-            this.panelTotal.SuspendLayout();
+            this.panelCategorias.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPedido)).BeginInit();
+            this.panelTotal.SuspendLayout();
+            this.panelCondiciones.SuspendLayout();
+            this.toolStripVentas.SuspendLayout();
+            this.tabPageProductos.SuspendLayout();
+            this.tabPageClientes.SuspendLayout();
+            this.toolStripProductos.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProductos)).BeginInit();
+            this.toolStriplClientes.SuspendLayout();
+            this.tabControl2.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -167,42 +185,381 @@
             this.tabPageVentas.Text = "Ventas";
             this.tabPageVentas.UseVisualStyleBackColor = true;
             // 
-            // tabPageProductos
+            // tabControlVentas
             // 
-            this.tabPageProductos.Location = new System.Drawing.Point(4, 22);
-            this.tabPageProductos.Name = "tabPageProductos";
-            this.tabPageProductos.Size = new System.Drawing.Size(569, 356);
-            this.tabPageProductos.TabIndex = 2;
-            this.tabPageProductos.Text = "Productos";
-            this.tabPageProductos.UseVisualStyleBackColor = true;
+            this.tabControlVentas.Alignment = System.Windows.Forms.TabAlignment.Bottom;
+            this.tabControlVentas.Controls.Add(this.tabPageSeleccionarCliente);
+            this.tabControlVentas.Controls.Add(this.tabPageConfigurarPedido);
+            this.tabControlVentas.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControlVentas.Location = new System.Drawing.Point(3, 28);
+            this.tabControlVentas.Name = "tabControlVentas";
+            this.tabControlVentas.SelectedIndex = 0;
+            this.tabControlVentas.Size = new System.Drawing.Size(563, 325);
+            this.tabControlVentas.TabIndex = 1;
             // 
-            // tabPageClientes
+            // tabPageSeleccionarCliente
             // 
-            this.tabPageClientes.Location = new System.Drawing.Point(4, 22);
-            this.tabPageClientes.Name = "tabPageClientes";
-            this.tabPageClientes.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageClientes.Size = new System.Drawing.Size(386, 276);
-            this.tabPageClientes.TabIndex = 0;
-            this.tabPageClientes.Text = "Clientes";
-            this.tabPageClientes.UseVisualStyleBackColor = true;
+            this.tabPageSeleccionarCliente.Controls.Add(this.splitContainerSeleccionarCliente);
+            this.tabPageSeleccionarCliente.Location = new System.Drawing.Point(4, 4);
+            this.tabPageSeleccionarCliente.Name = "tabPageSeleccionarCliente";
+            this.tabPageSeleccionarCliente.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageSeleccionarCliente.Size = new System.Drawing.Size(555, 299);
+            this.tabPageSeleccionarCliente.TabIndex = 0;
+            this.tabPageSeleccionarCliente.Text = "Seleccionar cliente";
+            this.tabPageSeleccionarCliente.UseVisualStyleBackColor = true;
             // 
-            // tabPageProveedores
+            // splitContainerSeleccionarCliente
             // 
-            this.tabPageProveedores.Location = new System.Drawing.Point(4, 22);
-            this.tabPageProveedores.Name = "tabPageProveedores";
-            this.tabPageProveedores.Size = new System.Drawing.Size(386, 276);
-            this.tabPageProveedores.TabIndex = 3;
-            this.tabPageProveedores.Text = "Proveedores";
-            this.tabPageProveedores.UseVisualStyleBackColor = true;
+            this.splitContainerSeleccionarCliente.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainerSeleccionarCliente.Location = new System.Drawing.Point(3, 3);
+            this.splitContainerSeleccionarCliente.Name = "splitContainerSeleccionarCliente";
             // 
-            // tabPageFacturas
+            // splitContainerSeleccionarCliente.Panel1
             // 
-            this.tabPageFacturas.Location = new System.Drawing.Point(4, 22);
-            this.tabPageFacturas.Name = "tabPageFacturas";
-            this.tabPageFacturas.Size = new System.Drawing.Size(386, 276);
-            this.tabPageFacturas.TabIndex = 4;
-            this.tabPageFacturas.Text = "Facturas";
-            this.tabPageFacturas.UseVisualStyleBackColor = true;
+            this.splitContainerSeleccionarCliente.Panel1.Controls.Add(this.tabControlSeleccionarCliente);
+            // 
+            // splitContainerSeleccionarCliente.Panel2
+            // 
+            this.splitContainerSeleccionarCliente.Panel2.Controls.Add(this.groupBoxDatosContactoClienteSelecionado);
+            this.splitContainerSeleccionarCliente.Panel2.Controls.Add(this.groupBoxDatosContactoClienteSeleccionado);
+            this.splitContainerSeleccionarCliente.Panel2.Controls.Add(this.groupBoxClienteSeleccionado);
+            this.splitContainerSeleccionarCliente.Size = new System.Drawing.Size(549, 293);
+            this.splitContainerSeleccionarCliente.SplitterDistance = 183;
+            this.splitContainerSeleccionarCliente.TabIndex = 0;
+            // 
+            // tabControlSeleccionarCliente
+            // 
+            this.tabControlSeleccionarCliente.Controls.Add(this.tabPageSeleccionarClienteIndividuo);
+            this.tabControlSeleccionarCliente.Controls.Add(this.tabPageSeleccionarClienteEmpresa);
+            this.tabControlSeleccionarCliente.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControlSeleccionarCliente.Location = new System.Drawing.Point(0, 0);
+            this.tabControlSeleccionarCliente.Multiline = true;
+            this.tabControlSeleccionarCliente.Name = "tabControlSeleccionarCliente";
+            this.tabControlSeleccionarCliente.SelectedIndex = 0;
+            this.tabControlSeleccionarCliente.Size = new System.Drawing.Size(183, 293);
+            this.tabControlSeleccionarCliente.TabIndex = 0;
+            // 
+            // tabPageSeleccionarClienteIndividuo
+            // 
+            this.tabPageSeleccionarClienteIndividuo.Controls.Add(this.dataGridViewSeleccionarClienteIndividuo);
+            this.tabPageSeleccionarClienteIndividuo.Location = new System.Drawing.Point(4, 22);
+            this.tabPageSeleccionarClienteIndividuo.Name = "tabPageSeleccionarClienteIndividuo";
+            this.tabPageSeleccionarClienteIndividuo.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageSeleccionarClienteIndividuo.Size = new System.Drawing.Size(175, 267);
+            this.tabPageSeleccionarClienteIndividuo.TabIndex = 0;
+            this.tabPageSeleccionarClienteIndividuo.Text = "Particular";
+            this.tabPageSeleccionarClienteIndividuo.UseVisualStyleBackColor = true;
+            // 
+            // dataGridViewSeleccionarClienteIndividuo
+            // 
+            this.dataGridViewSeleccionarClienteIndividuo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewSeleccionarClienteIndividuo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewSeleccionarClienteIndividuo.Location = new System.Drawing.Point(3, 3);
+            this.dataGridViewSeleccionarClienteIndividuo.Name = "dataGridViewSeleccionarClienteIndividuo";
+            this.dataGridViewSeleccionarClienteIndividuo.Size = new System.Drawing.Size(169, 261);
+            this.dataGridViewSeleccionarClienteIndividuo.TabIndex = 0;
+            // 
+            // tabPageSeleccionarClienteEmpresa
+            // 
+            this.tabPageSeleccionarClienteEmpresa.Controls.Add(this.dataGridViewSeleccionarClienteEmpresa);
+            this.tabPageSeleccionarClienteEmpresa.Location = new System.Drawing.Point(4, 22);
+            this.tabPageSeleccionarClienteEmpresa.Name = "tabPageSeleccionarClienteEmpresa";
+            this.tabPageSeleccionarClienteEmpresa.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageSeleccionarClienteEmpresa.Size = new System.Drawing.Size(175, 267);
+            this.tabPageSeleccionarClienteEmpresa.TabIndex = 1;
+            this.tabPageSeleccionarClienteEmpresa.Text = "Empresa";
+            this.tabPageSeleccionarClienteEmpresa.UseVisualStyleBackColor = true;
+            // 
+            // dataGridViewSeleccionarClienteEmpresa
+            // 
+            this.dataGridViewSeleccionarClienteEmpresa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewSeleccionarClienteEmpresa.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewSeleccionarClienteEmpresa.Location = new System.Drawing.Point(3, 3);
+            this.dataGridViewSeleccionarClienteEmpresa.Name = "dataGridViewSeleccionarClienteEmpresa";
+            this.dataGridViewSeleccionarClienteEmpresa.Size = new System.Drawing.Size(169, 261);
+            this.dataGridViewSeleccionarClienteEmpresa.TabIndex = 0;
+            // 
+            // groupBoxDatosContactoClienteSelecionado
+            // 
+            this.groupBoxDatosContactoClienteSelecionado.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBoxDatosContactoClienteSelecionado.Controls.Add(this.labelContactoDireccion);
+            this.groupBoxDatosContactoClienteSelecionado.Controls.Add(this.labelContactoTelefono);
+            this.groupBoxDatosContactoClienteSelecionado.Controls.Add(this.labelContactoEmail);
+            this.groupBoxDatosContactoClienteSelecionado.Controls.Add(this.labelContacto);
+            this.groupBoxDatosContactoClienteSelecionado.Location = new System.Drawing.Point(26, 182);
+            this.groupBoxDatosContactoClienteSelecionado.Name = "groupBoxDatosContactoClienteSelecionado";
+            this.groupBoxDatosContactoClienteSelecionado.Size = new System.Drawing.Size(317, 104);
+            this.groupBoxDatosContactoClienteSelecionado.TabIndex = 3;
+            this.groupBoxDatosContactoClienteSelecionado.TabStop = false;
+            this.groupBoxDatosContactoClienteSelecionado.Text = "Persona de contacto";
+            // 
+            // labelContactoDireccion
+            // 
+            this.labelContactoDireccion.AutoSize = true;
+            this.labelContactoDireccion.Location = new System.Drawing.Point(18, 71);
+            this.labelContactoDireccion.Name = "labelContactoDireccion";
+            this.labelContactoDireccion.Size = new System.Drawing.Size(52, 13);
+            this.labelContactoDireccion.TabIndex = 3;
+            this.labelContactoDireccion.Text = "Dirección";
+            // 
+            // labelContactoTelefono
+            // 
+            this.labelContactoTelefono.AutoSize = true;
+            this.labelContactoTelefono.Location = new System.Drawing.Point(18, 54);
+            this.labelContactoTelefono.Name = "labelContactoTelefono";
+            this.labelContactoTelefono.Size = new System.Drawing.Size(49, 13);
+            this.labelContactoTelefono.TabIndex = 2;
+            this.labelContactoTelefono.Text = "Teléfono";
+            // 
+            // labelContactoEmail
+            // 
+            this.labelContactoEmail.AutoSize = true;
+            this.labelContactoEmail.Location = new System.Drawing.Point(18, 37);
+            this.labelContactoEmail.Name = "labelContactoEmail";
+            this.labelContactoEmail.Size = new System.Drawing.Size(32, 13);
+            this.labelContactoEmail.TabIndex = 1;
+            this.labelContactoEmail.Text = "Email";
+            // 
+            // labelContacto
+            // 
+            this.labelContacto.AutoSize = true;
+            this.labelContacto.Location = new System.Drawing.Point(18, 20);
+            this.labelContacto.Name = "labelContacto";
+            this.labelContacto.Size = new System.Drawing.Size(44, 13);
+            this.labelContacto.TabIndex = 0;
+            this.labelContacto.Text = "Nombre";
+            // 
+            // groupBoxDatosContactoClienteSeleccionado
+            // 
+            this.groupBoxDatosContactoClienteSeleccionado.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBoxDatosContactoClienteSeleccionado.Controls.Add(this.labelDireccionClienteSeccionado);
+            this.groupBoxDatosContactoClienteSeleccionado.Controls.Add(this.labelTelefonoClienteSeleccionado);
+            this.groupBoxDatosContactoClienteSeleccionado.Controls.Add(this.labelEmailClienteSeleccionado);
+            this.groupBoxDatosContactoClienteSeleccionado.Location = new System.Drawing.Point(26, 91);
+            this.groupBoxDatosContactoClienteSeleccionado.Name = "groupBoxDatosContactoClienteSeleccionado";
+            this.groupBoxDatosContactoClienteSeleccionado.Size = new System.Drawing.Size(317, 85);
+            this.groupBoxDatosContactoClienteSeleccionado.TabIndex = 1;
+            this.groupBoxDatosContactoClienteSeleccionado.TabStop = false;
+            this.groupBoxDatosContactoClienteSeleccionado.Text = "Información de contacto";
+            // 
+            // labelDireccionClienteSeccionado
+            // 
+            this.labelDireccionClienteSeccionado.AutoSize = true;
+            this.labelDireccionClienteSeccionado.Location = new System.Drawing.Point(18, 60);
+            this.labelDireccionClienteSeccionado.Name = "labelDireccionClienteSeccionado";
+            this.labelDireccionClienteSeccionado.Size = new System.Drawing.Size(52, 13);
+            this.labelDireccionClienteSeccionado.TabIndex = 2;
+            this.labelDireccionClienteSeccionado.Text = "Dirección";
+            // 
+            // labelTelefonoClienteSeleccionado
+            // 
+            this.labelTelefonoClienteSeleccionado.AutoSize = true;
+            this.labelTelefonoClienteSeleccionado.Location = new System.Drawing.Point(18, 38);
+            this.labelTelefonoClienteSeleccionado.Name = "labelTelefonoClienteSeleccionado";
+            this.labelTelefonoClienteSeleccionado.Size = new System.Drawing.Size(49, 13);
+            this.labelTelefonoClienteSeleccionado.TabIndex = 1;
+            this.labelTelefonoClienteSeleccionado.Text = "Teléfono";
+            // 
+            // labelEmailClienteSeleccionado
+            // 
+            this.labelEmailClienteSeleccionado.AutoSize = true;
+            this.labelEmailClienteSeleccionado.Location = new System.Drawing.Point(18, 16);
+            this.labelEmailClienteSeleccionado.Name = "labelEmailClienteSeleccionado";
+            this.labelEmailClienteSeleccionado.Size = new System.Drawing.Size(32, 13);
+            this.labelEmailClienteSeleccionado.TabIndex = 0;
+            this.labelEmailClienteSeleccionado.Text = "Email";
+            // 
+            // groupBoxClienteSeleccionado
+            // 
+            this.groupBoxClienteSeleccionado.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBoxClienteSeleccionado.Controls.Add(this.labelCUITClienteSeleccionado);
+            this.groupBoxClienteSeleccionado.Controls.Add(this.labelNombreClienteSeleccionado);
+            this.groupBoxClienteSeleccionado.Location = new System.Drawing.Point(26, 22);
+            this.groupBoxClienteSeleccionado.Name = "groupBoxClienteSeleccionado";
+            this.groupBoxClienteSeleccionado.Size = new System.Drawing.Size(317, 63);
+            this.groupBoxClienteSeleccionado.TabIndex = 0;
+            this.groupBoxClienteSeleccionado.TabStop = false;
+            this.groupBoxClienteSeleccionado.Text = "Cliente seleccionado";
+            // 
+            // labelCUITClienteSeleccionado
+            // 
+            this.labelCUITClienteSeleccionado.AutoSize = true;
+            this.labelCUITClienteSeleccionado.Location = new System.Drawing.Point(18, 38);
+            this.labelCUITClienteSeleccionado.Name = "labelCUITClienteSeleccionado";
+            this.labelCUITClienteSeleccionado.Size = new System.Drawing.Size(44, 13);
+            this.labelCUITClienteSeleccionado.TabIndex = 1;
+            this.labelCUITClienteSeleccionado.Text = "C.U.I.T.";
+            // 
+            // labelNombreClienteSeleccionado
+            // 
+            this.labelNombreClienteSeleccionado.AutoSize = true;
+            this.labelNombreClienteSeleccionado.Location = new System.Drawing.Point(18, 16);
+            this.labelNombreClienteSeleccionado.Name = "labelNombreClienteSeleccionado";
+            this.labelNombreClienteSeleccionado.Size = new System.Drawing.Size(44, 13);
+            this.labelNombreClienteSeleccionado.TabIndex = 0;
+            this.labelNombreClienteSeleccionado.Text = "Nombre";
+            // 
+            // tabPageConfigurarPedido
+            // 
+            this.tabPageConfigurarPedido.Controls.Add(this.splitContainerConfigurarPedido);
+            this.tabPageConfigurarPedido.Location = new System.Drawing.Point(4, 4);
+            this.tabPageConfigurarPedido.Name = "tabPageConfigurarPedido";
+            this.tabPageConfigurarPedido.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageConfigurarPedido.Size = new System.Drawing.Size(555, 299);
+            this.tabPageConfigurarPedido.TabIndex = 1;
+            this.tabPageConfigurarPedido.Text = "Configurar pedido";
+            this.tabPageConfigurarPedido.UseVisualStyleBackColor = true;
+            // 
+            // splitContainerConfigurarPedido
+            // 
+            this.splitContainerConfigurarPedido.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainerConfigurarPedido.Location = new System.Drawing.Point(3, 3);
+            this.splitContainerConfigurarPedido.Name = "splitContainerConfigurarPedido";
+            // 
+            // splitContainerConfigurarPedido.Panel1
+            // 
+            this.splitContainerConfigurarPedido.Panel1.Controls.Add(this.dataGridViewPedidoProductos);
+            this.splitContainerConfigurarPedido.Panel1.Controls.Add(this.panelCategorias);
+            // 
+            // splitContainerConfigurarPedido.Panel2
+            // 
+            this.splitContainerConfigurarPedido.Panel2.Controls.Add(this.dataGridViewPedido);
+            this.splitContainerConfigurarPedido.Panel2.Controls.Add(this.panelTotal);
+            this.splitContainerConfigurarPedido.Panel2.Controls.Add(this.panelCondiciones);
+            this.splitContainerConfigurarPedido.Size = new System.Drawing.Size(549, 293);
+            this.splitContainerConfigurarPedido.SplitterDistance = 183;
+            this.splitContainerConfigurarPedido.TabIndex = 0;
+            // 
+            // dataGridViewPedidoProductos
+            // 
+            this.dataGridViewPedidoProductos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridViewPedidoProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewPedidoProductos.Location = new System.Drawing.Point(21, 106);
+            this.dataGridViewPedidoProductos.Name = "dataGridViewPedidoProductos";
+            this.dataGridViewPedidoProductos.Size = new System.Drawing.Size(142, 164);
+            this.dataGridViewPedidoProductos.TabIndex = 1;
+            // 
+            // panelCategorias
+            // 
+            this.panelCategorias.Controls.Add(this.comboBoxSubcategoria);
+            this.panelCategorias.Controls.Add(this.comboBoxCategoria);
+            this.panelCategorias.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelCategorias.Location = new System.Drawing.Point(0, 0);
+            this.panelCategorias.Name = "panelCategorias";
+            this.panelCategorias.Size = new System.Drawing.Size(183, 100);
+            this.panelCategorias.TabIndex = 0;
+            // 
+            // comboBoxSubcategoria
+            // 
+            this.comboBoxSubcategoria.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBoxSubcategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxSubcategoria.FormattingEnabled = true;
+            this.comboBoxSubcategoria.Location = new System.Drawing.Point(21, 46);
+            this.comboBoxSubcategoria.Name = "comboBoxSubcategoria";
+            this.comboBoxSubcategoria.Size = new System.Drawing.Size(142, 21);
+            this.comboBoxSubcategoria.TabIndex = 1;
+            // 
+            // comboBoxCategoria
+            // 
+            this.comboBoxCategoria.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBoxCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxCategoria.FormattingEnabled = true;
+            this.comboBoxCategoria.Location = new System.Drawing.Point(21, 18);
+            this.comboBoxCategoria.Name = "comboBoxCategoria";
+            this.comboBoxCategoria.Size = new System.Drawing.Size(142, 21);
+            this.comboBoxCategoria.TabIndex = 0;
+            // 
+            // dataGridViewPedido
+            // 
+            this.dataGridViewPedido.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridViewPedido.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewPedido.Location = new System.Drawing.Point(25, 106);
+            this.dataGridViewPedido.Name = "dataGridViewPedido";
+            this.dataGridViewPedido.Size = new System.Drawing.Size(310, 102);
+            this.dataGridViewPedido.TabIndex = 2;
+            // 
+            // panelTotal
+            // 
+            this.panelTotal.Controls.Add(this.labelTotal);
+            this.panelTotal.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panelTotal.Location = new System.Drawing.Point(0, 231);
+            this.panelTotal.Name = "panelTotal";
+            this.panelTotal.Size = new System.Drawing.Size(362, 62);
+            this.panelTotal.TabIndex = 1;
+            // 
+            // labelTotal
+            // 
+            this.labelTotal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelTotal.AutoSize = true;
+            this.labelTotal.Location = new System.Drawing.Point(296, 26);
+            this.labelTotal.Name = "labelTotal";
+            this.labelTotal.Size = new System.Drawing.Size(31, 13);
+            this.labelTotal.TabIndex = 0;
+            this.labelTotal.Text = "Total";
+            // 
+            // panelCondiciones
+            // 
+            this.panelCondiciones.Controls.Add(this.comboBoxCondicionVenta);
+            this.panelCondiciones.Controls.Add(this.comboBoxCondicionIVA);
+            this.panelCondiciones.Controls.Add(this.labelCondicionVenta);
+            this.panelCondiciones.Controls.Add(this.labelCondicionIVA);
+            this.panelCondiciones.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelCondiciones.Location = new System.Drawing.Point(0, 0);
+            this.panelCondiciones.Name = "panelCondiciones";
+            this.panelCondiciones.Size = new System.Drawing.Size(362, 81);
+            this.panelCondiciones.TabIndex = 0;
+            // 
+            // comboBoxCondicionVenta
+            // 
+            this.comboBoxCondicionVenta.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBoxCondicionVenta.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxCondicionVenta.FormattingEnabled = true;
+            this.comboBoxCondicionVenta.Location = new System.Drawing.Point(143, 43);
+            this.comboBoxCondicionVenta.Name = "comboBoxCondicionVenta";
+            this.comboBoxCondicionVenta.Size = new System.Drawing.Size(192, 21);
+            this.comboBoxCondicionVenta.TabIndex = 3;
+            // 
+            // comboBoxCondicionIVA
+            // 
+            this.comboBoxCondicionIVA.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.comboBoxCondicionIVA.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxCondicionIVA.FormattingEnabled = true;
+            this.comboBoxCondicionIVA.Location = new System.Drawing.Point(143, 15);
+            this.comboBoxCondicionIVA.Name = "comboBoxCondicionIVA";
+            this.comboBoxCondicionIVA.Size = new System.Drawing.Size(192, 21);
+            this.comboBoxCondicionIVA.TabIndex = 2;
+            this.comboBoxCondicionIVA.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // labelCondicionVenta
+            // 
+            this.labelCondicionVenta.AutoSize = true;
+            this.labelCondicionVenta.Location = new System.Drawing.Point(22, 46);
+            this.labelCondicionVenta.Name = "labelCondicionVenta";
+            this.labelCondicionVenta.Size = new System.Drawing.Size(100, 13);
+            this.labelCondicionVenta.TabIndex = 1;
+            this.labelCondicionVenta.Text = "Condición de Venta";
+            // 
+            // labelCondicionIVA
+            // 
+            this.labelCondicionIVA.AutoSize = true;
+            this.labelCondicionIVA.Location = new System.Drawing.Point(22, 18);
+            this.labelCondicionIVA.Name = "labelCondicionIVA";
+            this.labelCondicionIVA.Size = new System.Drawing.Size(115, 13);
+            this.labelCondicionIVA.TabIndex = 0;
+            this.labelCondicionIVA.Text = "Condición frente al IVA";
             // 
             // toolStripVentas
             // 
@@ -248,381 +605,170 @@
             this.toolStripButtonCerrar.Text = "Cerrar";
             this.toolStripButtonCerrar.ToolTipText = "Confirma la transacción de venta.";
             // 
-            // tabControlVentas
-            // 
-            this.tabControlVentas.Alignment = System.Windows.Forms.TabAlignment.Bottom;
-            this.tabControlVentas.Controls.Add(this.tabPageSeleccionarCliente);
-            this.tabControlVentas.Controls.Add(this.tabPageConfigurarPedido);
-            this.tabControlVentas.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControlVentas.Location = new System.Drawing.Point(3, 28);
-            this.tabControlVentas.Name = "tabControlVentas";
-            this.tabControlVentas.SelectedIndex = 0;
-            this.tabControlVentas.Size = new System.Drawing.Size(563, 325);
-            this.tabControlVentas.TabIndex = 1;
-            // 
-            // tabPageSeleccionarCliente
-            // 
-            this.tabPageSeleccionarCliente.Controls.Add(this.splitContainerSeleccionarCliente);
-            this.tabPageSeleccionarCliente.Location = new System.Drawing.Point(4, 4);
-            this.tabPageSeleccionarCliente.Name = "tabPageSeleccionarCliente";
-            this.tabPageSeleccionarCliente.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageSeleccionarCliente.Size = new System.Drawing.Size(555, 299);
-            this.tabPageSeleccionarCliente.TabIndex = 0;
-            this.tabPageSeleccionarCliente.Text = "Seleccionar cliente";
-            this.tabPageSeleccionarCliente.UseVisualStyleBackColor = true;
-            // 
-            // tabPageConfigurarPedido
-            // 
-            this.tabPageConfigurarPedido.Controls.Add(this.splitContainerConfigurarPedido);
-            this.tabPageConfigurarPedido.Location = new System.Drawing.Point(4, 4);
-            this.tabPageConfigurarPedido.Name = "tabPageConfigurarPedido";
-            this.tabPageConfigurarPedido.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageConfigurarPedido.Size = new System.Drawing.Size(555, 299);
-            this.tabPageConfigurarPedido.TabIndex = 1;
-            this.tabPageConfigurarPedido.Text = "Configurar pedido";
-            this.tabPageConfigurarPedido.UseVisualStyleBackColor = true;
-            // 
-            // splitContainerSeleccionarCliente
-            // 
-            this.splitContainerSeleccionarCliente.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainerSeleccionarCliente.Location = new System.Drawing.Point(3, 3);
-            this.splitContainerSeleccionarCliente.Name = "splitContainerSeleccionarCliente";
-            // 
-            // splitContainerSeleccionarCliente.Panel1
-            // 
-            this.splitContainerSeleccionarCliente.Panel1.Controls.Add(this.tabControlSeleccionarCliente);
-            // 
-            // splitContainerSeleccionarCliente.Panel2
-            // 
-            this.splitContainerSeleccionarCliente.Panel2.Controls.Add(this.groupBoxDatosContactoClienteSelecionado);
-            this.splitContainerSeleccionarCliente.Panel2.Controls.Add(this.groupBoxDatosContactoClienteSeleccionado);
-            this.splitContainerSeleccionarCliente.Panel2.Controls.Add(this.groupBoxClienteSeleccionado);
-            this.splitContainerSeleccionarCliente.Size = new System.Drawing.Size(549, 293);
-            this.splitContainerSeleccionarCliente.SplitterDistance = 183;
-            this.splitContainerSeleccionarCliente.TabIndex = 0;
-            // 
-            // tabControlSeleccionarCliente
-            // 
-            this.tabControlSeleccionarCliente.Controls.Add(this.tabPageSeleccionarClienteIndividuo);
-            this.tabControlSeleccionarCliente.Controls.Add(this.tabPageSeleccionarClienteEmpresa);
-            this.tabControlSeleccionarCliente.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControlSeleccionarCliente.Location = new System.Drawing.Point(0, 0);
-            this.tabControlSeleccionarCliente.Multiline = true;
-            this.tabControlSeleccionarCliente.Name = "tabControlSeleccionarCliente";
-            this.tabControlSeleccionarCliente.SelectedIndex = 0;
-            this.tabControlSeleccionarCliente.Size = new System.Drawing.Size(183, 293);
-            this.tabControlSeleccionarCliente.TabIndex = 0;
-            // 
-            // tabPageSeleccionarClienteIndividuo
-            // 
-            this.tabPageSeleccionarClienteIndividuo.Controls.Add(this.dataGridViewSeleccionarClienteIndividuo);
-            this.tabPageSeleccionarClienteIndividuo.Location = new System.Drawing.Point(4, 22);
-            this.tabPageSeleccionarClienteIndividuo.Name = "tabPageSeleccionarClienteIndividuo";
-            this.tabPageSeleccionarClienteIndividuo.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageSeleccionarClienteIndividuo.Size = new System.Drawing.Size(162, 193);
-            this.tabPageSeleccionarClienteIndividuo.TabIndex = 0;
-            this.tabPageSeleccionarClienteIndividuo.Text = "Particular";
-            this.tabPageSeleccionarClienteIndividuo.UseVisualStyleBackColor = true;
-            // 
-            // tabPageSeleccionarClienteEmpresa
-            // 
-            this.tabPageSeleccionarClienteEmpresa.Controls.Add(this.dataGridViewSeleccionarClienteEmpresa);
-            this.tabPageSeleccionarClienteEmpresa.Location = new System.Drawing.Point(4, 22);
-            this.tabPageSeleccionarClienteEmpresa.Name = "tabPageSeleccionarClienteEmpresa";
-            this.tabPageSeleccionarClienteEmpresa.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageSeleccionarClienteEmpresa.Size = new System.Drawing.Size(175, 267);
-            this.tabPageSeleccionarClienteEmpresa.TabIndex = 1;
-            this.tabPageSeleccionarClienteEmpresa.Text = "Empresa";
-            this.tabPageSeleccionarClienteEmpresa.UseVisualStyleBackColor = true;
-            // 
-            // dataGridViewSeleccionarClienteIndividuo
-            // 
-            this.dataGridViewSeleccionarClienteIndividuo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewSeleccionarClienteIndividuo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridViewSeleccionarClienteIndividuo.Location = new System.Drawing.Point(3, 3);
-            this.dataGridViewSeleccionarClienteIndividuo.Name = "dataGridViewSeleccionarClienteIndividuo";
-            this.dataGridViewSeleccionarClienteIndividuo.Size = new System.Drawing.Size(156, 187);
-            this.dataGridViewSeleccionarClienteIndividuo.TabIndex = 0;
-            // 
-            // dataGridViewSeleccionarClienteEmpresa
-            // 
-            this.dataGridViewSeleccionarClienteEmpresa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewSeleccionarClienteEmpresa.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridViewSeleccionarClienteEmpresa.Location = new System.Drawing.Point(3, 3);
-            this.dataGridViewSeleccionarClienteEmpresa.Name = "dataGridViewSeleccionarClienteEmpresa";
-            this.dataGridViewSeleccionarClienteEmpresa.Size = new System.Drawing.Size(169, 261);
-            this.dataGridViewSeleccionarClienteEmpresa.TabIndex = 0;
-            // 
-            // groupBoxClienteSeleccionado
-            // 
-            this.groupBoxClienteSeleccionado.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBoxClienteSeleccionado.Controls.Add(this.labelCUITClienteSeleccionado);
-            this.groupBoxClienteSeleccionado.Controls.Add(this.labelNombreClienteSeleccionado);
-            this.groupBoxClienteSeleccionado.Location = new System.Drawing.Point(26, 22);
-            this.groupBoxClienteSeleccionado.Name = "groupBoxClienteSeleccionado";
-            this.groupBoxClienteSeleccionado.Size = new System.Drawing.Size(317, 63);
-            this.groupBoxClienteSeleccionado.TabIndex = 0;
-            this.groupBoxClienteSeleccionado.TabStop = false;
-            this.groupBoxClienteSeleccionado.Text = "Cliente seleccionado";
-            // 
-            // labelNombreClienteSeleccionado
-            // 
-            this.labelNombreClienteSeleccionado.AutoSize = true;
-            this.labelNombreClienteSeleccionado.Location = new System.Drawing.Point(18, 16);
-            this.labelNombreClienteSeleccionado.Name = "labelNombreClienteSeleccionado";
-            this.labelNombreClienteSeleccionado.Size = new System.Drawing.Size(44, 13);
-            this.labelNombreClienteSeleccionado.TabIndex = 0;
-            this.labelNombreClienteSeleccionado.Text = "Nombre";
-            // 
-            // labelCUITClienteSeleccionado
-            // 
-            this.labelCUITClienteSeleccionado.AutoSize = true;
-            this.labelCUITClienteSeleccionado.Location = new System.Drawing.Point(18, 38);
-            this.labelCUITClienteSeleccionado.Name = "labelCUITClienteSeleccionado";
-            this.labelCUITClienteSeleccionado.Size = new System.Drawing.Size(44, 13);
-            this.labelCUITClienteSeleccionado.TabIndex = 1;
-            this.labelCUITClienteSeleccionado.Text = "C.U.I.T.";
-            // 
-            // groupBoxDatosContactoClienteSeleccionado
-            // 
-            this.groupBoxDatosContactoClienteSeleccionado.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBoxDatosContactoClienteSeleccionado.Controls.Add(this.labelDireccionClienteSeccionado);
-            this.groupBoxDatosContactoClienteSeleccionado.Controls.Add(this.labelTelefonoClienteSeleccionado);
-            this.groupBoxDatosContactoClienteSeleccionado.Controls.Add(this.labelEmailClienteSeleccionado);
-            this.groupBoxDatosContactoClienteSeleccionado.Location = new System.Drawing.Point(26, 91);
-            this.groupBoxDatosContactoClienteSeleccionado.Name = "groupBoxDatosContactoClienteSeleccionado";
-            this.groupBoxDatosContactoClienteSeleccionado.Size = new System.Drawing.Size(317, 85);
-            this.groupBoxDatosContactoClienteSeleccionado.TabIndex = 1;
-            this.groupBoxDatosContactoClienteSeleccionado.TabStop = false;
-            this.groupBoxDatosContactoClienteSeleccionado.Text = "Información de contacto";
-            // 
-            // labelEmailClienteSeleccionado
-            // 
-            this.labelEmailClienteSeleccionado.AutoSize = true;
-            this.labelEmailClienteSeleccionado.Location = new System.Drawing.Point(18, 16);
-            this.labelEmailClienteSeleccionado.Name = "labelEmailClienteSeleccionado";
-            this.labelEmailClienteSeleccionado.Size = new System.Drawing.Size(32, 13);
-            this.labelEmailClienteSeleccionado.TabIndex = 0;
-            this.labelEmailClienteSeleccionado.Text = "Email";
-            // 
-            // labelTelefonoClienteSeleccionado
-            // 
-            this.labelTelefonoClienteSeleccionado.AutoSize = true;
-            this.labelTelefonoClienteSeleccionado.Location = new System.Drawing.Point(18, 38);
-            this.labelTelefonoClienteSeleccionado.Name = "labelTelefonoClienteSeleccionado";
-            this.labelTelefonoClienteSeleccionado.Size = new System.Drawing.Size(49, 13);
-            this.labelTelefonoClienteSeleccionado.TabIndex = 1;
-            this.labelTelefonoClienteSeleccionado.Text = "Teléfono";
-            // 
-            // labelDireccionClienteSeccionado
-            // 
-            this.labelDireccionClienteSeccionado.AutoSize = true;
-            this.labelDireccionClienteSeccionado.Location = new System.Drawing.Point(18, 60);
-            this.labelDireccionClienteSeccionado.Name = "labelDireccionClienteSeccionado";
-            this.labelDireccionClienteSeccionado.Size = new System.Drawing.Size(52, 13);
-            this.labelDireccionClienteSeccionado.TabIndex = 2;
-            this.labelDireccionClienteSeccionado.Text = "Dirección";
-            // 
-            // groupBoxDatosContactoClienteSelecionado
-            // 
-            this.groupBoxDatosContactoClienteSelecionado.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBoxDatosContactoClienteSelecionado.Controls.Add(this.labelContactoDireccion);
-            this.groupBoxDatosContactoClienteSelecionado.Controls.Add(this.labelContactoTelefono);
-            this.groupBoxDatosContactoClienteSelecionado.Controls.Add(this.labelContactoEmail);
-            this.groupBoxDatosContactoClienteSelecionado.Controls.Add(this.labelContacto);
-            this.groupBoxDatosContactoClienteSelecionado.Location = new System.Drawing.Point(26, 182);
-            this.groupBoxDatosContactoClienteSelecionado.Name = "groupBoxDatosContactoClienteSelecionado";
-            this.groupBoxDatosContactoClienteSelecionado.Size = new System.Drawing.Size(317, 104);
-            this.groupBoxDatosContactoClienteSelecionado.TabIndex = 3;
-            this.groupBoxDatosContactoClienteSelecionado.TabStop = false;
-            this.groupBoxDatosContactoClienteSelecionado.Text = "Persona de contacto";
-            // 
-            // labelContacto
-            // 
-            this.labelContacto.AutoSize = true;
-            this.labelContacto.Location = new System.Drawing.Point(18, 20);
-            this.labelContacto.Name = "labelContacto";
-            this.labelContacto.Size = new System.Drawing.Size(44, 13);
-            this.labelContacto.TabIndex = 0;
-            this.labelContacto.Text = "Nombre";
-            // 
-            // labelContactoEmail
-            // 
-            this.labelContactoEmail.AutoSize = true;
-            this.labelContactoEmail.Location = new System.Drawing.Point(18, 37);
-            this.labelContactoEmail.Name = "labelContactoEmail";
-            this.labelContactoEmail.Size = new System.Drawing.Size(32, 13);
-            this.labelContactoEmail.TabIndex = 1;
-            this.labelContactoEmail.Text = "Email";
-            // 
-            // labelContactoTelefono
-            // 
-            this.labelContactoTelefono.AutoSize = true;
-            this.labelContactoTelefono.Location = new System.Drawing.Point(18, 54);
-            this.labelContactoTelefono.Name = "labelContactoTelefono";
-            this.labelContactoTelefono.Size = new System.Drawing.Size(49, 13);
-            this.labelContactoTelefono.TabIndex = 2;
-            this.labelContactoTelefono.Text = "Teléfono";
-            // 
-            // labelContactoDireccion
-            // 
-            this.labelContactoDireccion.AutoSize = true;
-            this.labelContactoDireccion.Location = new System.Drawing.Point(18, 71);
-            this.labelContactoDireccion.Name = "labelContactoDireccion";
-            this.labelContactoDireccion.Size = new System.Drawing.Size(52, 13);
-            this.labelContactoDireccion.TabIndex = 3;
-            this.labelContactoDireccion.Text = "Dirección";
-            // 
-            // splitContainerConfigurarPedido
-            // 
-            this.splitContainerConfigurarPedido.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainerConfigurarPedido.Location = new System.Drawing.Point(3, 3);
-            this.splitContainerConfigurarPedido.Name = "splitContainerConfigurarPedido";
-            // 
-            // splitContainerConfigurarPedido.Panel1
-            // 
-            this.splitContainerConfigurarPedido.Panel1.Controls.Add(this.dataGridViewPedidoProductos);
-            this.splitContainerConfigurarPedido.Panel1.Controls.Add(this.panelCategorias);
-            // 
-            // splitContainerConfigurarPedido.Panel2
-            // 
-            this.splitContainerConfigurarPedido.Panel2.Controls.Add(this.dataGridViewPedido);
-            this.splitContainerConfigurarPedido.Panel2.Controls.Add(this.panelTotal);
-            this.splitContainerConfigurarPedido.Panel2.Controls.Add(this.panelCondiciones);
-            this.splitContainerConfigurarPedido.Size = new System.Drawing.Size(549, 293);
-            this.splitContainerConfigurarPedido.SplitterDistance = 183;
-            this.splitContainerConfigurarPedido.TabIndex = 0;
-            // 
-            // panelCategorias
-            // 
-            this.panelCategorias.Controls.Add(this.comboBoxSubcategoria);
-            this.panelCategorias.Controls.Add(this.comboBoxCategoria);
-            this.panelCategorias.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelCategorias.Location = new System.Drawing.Point(0, 0);
-            this.panelCategorias.Name = "panelCategorias";
-            this.panelCategorias.Size = new System.Drawing.Size(183, 100);
-            this.panelCategorias.TabIndex = 0;
-            // 
-            // comboBoxCategoria
-            // 
-            this.comboBoxCategoria.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBoxCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxCategoria.FormattingEnabled = true;
-            this.comboBoxCategoria.Location = new System.Drawing.Point(21, 18);
-            this.comboBoxCategoria.Name = "comboBoxCategoria";
-            this.comboBoxCategoria.Size = new System.Drawing.Size(142, 21);
-            this.comboBoxCategoria.TabIndex = 0;
-            // 
-            // comboBoxSubcategoria
-            // 
-            this.comboBoxSubcategoria.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBoxSubcategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxSubcategoria.FormattingEnabled = true;
-            this.comboBoxSubcategoria.Location = new System.Drawing.Point(21, 46);
-            this.comboBoxSubcategoria.Name = "comboBoxSubcategoria";
-            this.comboBoxSubcategoria.Size = new System.Drawing.Size(142, 21);
-            this.comboBoxSubcategoria.TabIndex = 1;
-            // 
-            // dataGridViewPedidoProductos
-            // 
-            this.dataGridViewPedidoProductos.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridViewPedidoProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewPedidoProductos.Location = new System.Drawing.Point(21, 106);
-            this.dataGridViewPedidoProductos.Name = "dataGridViewPedidoProductos";
-            this.dataGridViewPedidoProductos.Size = new System.Drawing.Size(142, 164);
-            this.dataGridViewPedidoProductos.TabIndex = 1;
-            // 
-            // panelCondiciones
-            // 
-            this.panelCondiciones.Controls.Add(this.comboBoxCondicionVenta);
-            this.panelCondiciones.Controls.Add(this.comboBoxCondicionIVA);
-            this.panelCondiciones.Controls.Add(this.labelCondicionVenta);
-            this.panelCondiciones.Controls.Add(this.labelCondicionIVA);
-            this.panelCondiciones.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelCondiciones.Location = new System.Drawing.Point(0, 0);
-            this.panelCondiciones.Name = "panelCondiciones";
-            this.panelCondiciones.Size = new System.Drawing.Size(362, 81);
-            this.panelCondiciones.TabIndex = 0;
-            // 
-            // labelCondicionIVA
-            // 
-            this.labelCondicionIVA.AutoSize = true;
-            this.labelCondicionIVA.Location = new System.Drawing.Point(22, 18);
-            this.labelCondicionIVA.Name = "labelCondicionIVA";
-            this.labelCondicionIVA.Size = new System.Drawing.Size(115, 13);
-            this.labelCondicionIVA.TabIndex = 0;
-            this.labelCondicionIVA.Text = "Condición frente al IVA";
-            // 
-            // labelCondicionVenta
-            // 
-            this.labelCondicionVenta.AutoSize = true;
-            this.labelCondicionVenta.Location = new System.Drawing.Point(22, 46);
-            this.labelCondicionVenta.Name = "labelCondicionVenta";
-            this.labelCondicionVenta.Size = new System.Drawing.Size(100, 13);
-            this.labelCondicionVenta.TabIndex = 1;
-            this.labelCondicionVenta.Text = "Condición de Venta";
-            // 
-            // comboBoxCondicionIVA
-            // 
-            this.comboBoxCondicionIVA.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBoxCondicionIVA.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxCondicionIVA.FormattingEnabled = true;
-            this.comboBoxCondicionIVA.Location = new System.Drawing.Point(143, 15);
-            this.comboBoxCondicionIVA.Name = "comboBoxCondicionIVA";
-            this.comboBoxCondicionIVA.Size = new System.Drawing.Size(192, 21);
-            this.comboBoxCondicionIVA.TabIndex = 2;
-            this.comboBoxCondicionIVA.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            // 
-            // comboBoxCondicionVenta
-            // 
-            this.comboBoxCondicionVenta.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.comboBoxCondicionVenta.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBoxCondicionVenta.FormattingEnabled = true;
-            this.comboBoxCondicionVenta.Location = new System.Drawing.Point(143, 43);
-            this.comboBoxCondicionVenta.Name = "comboBoxCondicionVenta";
-            this.comboBoxCondicionVenta.Size = new System.Drawing.Size(192, 21);
-            this.comboBoxCondicionVenta.TabIndex = 3;
-            // 
-            // panelTotal
-            // 
-            this.panelTotal.Controls.Add(this.labelTotal);
-            this.panelTotal.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelTotal.Location = new System.Drawing.Point(0, 231);
-            this.panelTotal.Name = "panelTotal";
-            this.panelTotal.Size = new System.Drawing.Size(362, 62);
-            this.panelTotal.TabIndex = 1;
-            // 
-            // labelTotal
-            // 
-            this.labelTotal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.labelTotal.AutoSize = true;
-            this.labelTotal.Location = new System.Drawing.Point(296, 26);
-            this.labelTotal.Name = "labelTotal";
-            this.labelTotal.Size = new System.Drawing.Size(31, 13);
-            this.labelTotal.TabIndex = 0;
-            this.labelTotal.Text = "Total";
-            // 
-            // dataGridViewPedido
-            // 
-            this.dataGridViewPedido.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dataGridViewPedido.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewPedido.Location = new System.Drawing.Point(25, 106);
-            this.dataGridViewPedido.Name = "dataGridViewPedido";
-            this.dataGridViewPedido.Size = new System.Drawing.Size(310, 102);
-            this.dataGridViewPedido.TabIndex = 2;
+            // tabPageProductos
+            // 
+            this.tabPageProductos.Controls.Add(this.dataGridViewProductos);
+            this.tabPageProductos.Controls.Add(this.toolStripProductos);
+            this.tabPageProductos.Location = new System.Drawing.Point(4, 22);
+            this.tabPageProductos.Name = "tabPageProductos";
+            this.tabPageProductos.Size = new System.Drawing.Size(569, 356);
+            this.tabPageProductos.TabIndex = 2;
+            this.tabPageProductos.Text = "Catálogo de productos";
+            this.tabPageProductos.UseVisualStyleBackColor = true;
+            // 
+            // tabPageClientes
+            // 
+            this.tabPageClientes.Controls.Add(this.tabControl2);
+            this.tabPageClientes.Controls.Add(this.toolStriplClientes);
+            this.tabPageClientes.Location = new System.Drawing.Point(4, 22);
+            this.tabPageClientes.Name = "tabPageClientes";
+            this.tabPageClientes.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageClientes.Size = new System.Drawing.Size(569, 356);
+            this.tabPageClientes.TabIndex = 0;
+            this.tabPageClientes.Text = "Clientes";
+            this.tabPageClientes.UseVisualStyleBackColor = true;
+            // 
+            // tabPageProveedores
+            // 
+            this.tabPageProveedores.Location = new System.Drawing.Point(4, 22);
+            this.tabPageProveedores.Name = "tabPageProveedores";
+            this.tabPageProveedores.Size = new System.Drawing.Size(569, 356);
+            this.tabPageProveedores.TabIndex = 3;
+            this.tabPageProveedores.Text = "Proveedores";
+            this.tabPageProveedores.UseVisualStyleBackColor = true;
+            // 
+            // tabPageFacturas
+            // 
+            this.tabPageFacturas.Location = new System.Drawing.Point(4, 22);
+            this.tabPageFacturas.Name = "tabPageFacturas";
+            this.tabPageFacturas.Size = new System.Drawing.Size(569, 356);
+            this.tabPageFacturas.TabIndex = 4;
+            this.tabPageFacturas.Text = "Facturas";
+            this.tabPageFacturas.UseVisualStyleBackColor = true;
+            // 
+            // toolStripProductos
+            // 
+            this.toolStripProductos.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripButtonAgregarProducto,
+            this.toolStripButtonModificarProducto,
+            this.toolStripButtonEliminarProducto});
+            this.toolStripProductos.Location = new System.Drawing.Point(0, 0);
+            this.toolStripProductos.Name = "toolStripProductos";
+            this.toolStripProductos.Size = new System.Drawing.Size(569, 25);
+            this.toolStripProductos.TabIndex = 0;
+            this.toolStripProductos.Text = "toolStrip1";
+            // 
+            // toolStripButtonAgregarProducto
+            // 
+            this.toolStripButtonAgregarProducto.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripButtonAgregarProducto.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonAgregarProducto.Image")));
+            this.toolStripButtonAgregarProducto.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButtonAgregarProducto.Name = "toolStripButtonAgregarProducto";
+            this.toolStripButtonAgregarProducto.Size = new System.Drawing.Size(53, 22);
+            this.toolStripButtonAgregarProducto.Text = "Agregar";
+            this.toolStripButtonAgregarProducto.ToolTipText = "Agrega un nuevo producto";
+            // 
+            // toolStripButtonModificarProducto
+            // 
+            this.toolStripButtonModificarProducto.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripButtonModificarProducto.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonModificarProducto.Image")));
+            this.toolStripButtonModificarProducto.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButtonModificarProducto.Name = "toolStripButtonModificarProducto";
+            this.toolStripButtonModificarProducto.Size = new System.Drawing.Size(62, 22);
+            this.toolStripButtonModificarProducto.Text = "Modificar";
+            this.toolStripButtonModificarProducto.ToolTipText = "Modifica el producto seleccionado.";
+            // 
+            // toolStripButtonEliminarProducto
+            // 
+            this.toolStripButtonEliminarProducto.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripButtonEliminarProducto.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonEliminarProducto.Image")));
+            this.toolStripButtonEliminarProducto.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButtonEliminarProducto.Name = "toolStripButtonEliminarProducto";
+            this.toolStripButtonEliminarProducto.Size = new System.Drawing.Size(54, 22);
+            this.toolStripButtonEliminarProducto.Text = "Eliminar";
+            this.toolStripButtonEliminarProducto.ToolTipText = "Elimina el producto seleccionado.";
+            // 
+            // dataGridViewProductos
+            // 
+            this.dataGridViewProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewProductos.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewProductos.Location = new System.Drawing.Point(0, 25);
+            this.dataGridViewProductos.Name = "dataGridViewProductos";
+            this.dataGridViewProductos.Size = new System.Drawing.Size(569, 331);
+            this.dataGridViewProductos.TabIndex = 1;
+            // 
+            // toolStriplClientes
+            // 
+            this.toolStriplClientes.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripButtonAgregarCliente,
+            this.toolStripButtonModificarCliente,
+            this.toolStripButtonEliminarCliente});
+            this.toolStriplClientes.Location = new System.Drawing.Point(3, 3);
+            this.toolStriplClientes.Name = "toolStriplClientes";
+            this.toolStriplClientes.Size = new System.Drawing.Size(563, 25);
+            this.toolStriplClientes.TabIndex = 0;
+            this.toolStriplClientes.Text = "toolStrip2";
+            // 
+            // toolStripButtonAgregarCliente
+            // 
+            this.toolStripButtonAgregarCliente.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripButtonAgregarCliente.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonAgregarCliente.Image")));
+            this.toolStripButtonAgregarCliente.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButtonAgregarCliente.Name = "toolStripButtonAgregarCliente";
+            this.toolStripButtonAgregarCliente.Size = new System.Drawing.Size(53, 22);
+            this.toolStripButtonAgregarCliente.Text = "Agregar";
+            this.toolStripButtonAgregarCliente.ToolTipText = "Agrega un nuevo cliente.";
+            // 
+            // toolStripButtonModificarCliente
+            // 
+            this.toolStripButtonModificarCliente.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripButtonModificarCliente.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonModificarCliente.Image")));
+            this.toolStripButtonModificarCliente.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButtonModificarCliente.Name = "toolStripButtonModificarCliente";
+            this.toolStripButtonModificarCliente.Size = new System.Drawing.Size(62, 22);
+            this.toolStripButtonModificarCliente.Text = "Modificar";
+            this.toolStripButtonModificarCliente.ToolTipText = "Modifica el cliente seleccionado.";
+            // 
+            // toolStripButtonEliminarCliente
+            // 
+            this.toolStripButtonEliminarCliente.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripButtonEliminarCliente.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonEliminarCliente.Image")));
+            this.toolStripButtonEliminarCliente.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButtonEliminarCliente.Name = "toolStripButtonEliminarCliente";
+            this.toolStripButtonEliminarCliente.Size = new System.Drawing.Size(54, 22);
+            this.toolStripButtonEliminarCliente.Text = "Eliminar";
+            this.toolStripButtonEliminarCliente.ToolTipText = "Elimina el cliente seleccionado.";
+            // 
+            // tabControl2
+            // 
+            this.tabControl2.Controls.Add(this.tabPageClienteIndividuo);
+            this.tabControl2.Controls.Add(this.tabPageClienteEmpresa);
+            this.tabControl2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl2.Location = new System.Drawing.Point(3, 28);
+            this.tabControl2.Name = "tabControl2";
+            this.tabControl2.SelectedIndex = 0;
+            this.tabControl2.Size = new System.Drawing.Size(563, 325);
+            this.tabControl2.TabIndex = 1;
+            // 
+            // tabPageClienteIndividuo
+            // 
+            this.tabPageClienteIndividuo.Location = new System.Drawing.Point(4, 22);
+            this.tabPageClienteIndividuo.Name = "tabPageClienteIndividuo";
+            this.tabPageClienteIndividuo.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageClienteIndividuo.Size = new System.Drawing.Size(192, 74);
+            this.tabPageClienteIndividuo.TabIndex = 0;
+            this.tabPageClienteIndividuo.Text = "Particulares";
+            this.tabPageClienteIndividuo.UseVisualStyleBackColor = true;
+            // 
+            // tabPageClienteEmpresa
+            // 
+            this.tabPageClienteEmpresa.Location = new System.Drawing.Point(4, 22);
+            this.tabPageClienteEmpresa.Name = "tabPageClienteEmpresa";
+            this.tabPageClienteEmpresa.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageClienteEmpresa.Size = new System.Drawing.Size(555, 299);
+            this.tabPageClienteEmpresa.TabIndex = 1;
+            this.tabPageClienteEmpresa.Text = "Empresas";
+            this.tabPageClienteEmpresa.UseVisualStyleBackColor = true;
             // 
             // frmPrincipal
             // 
@@ -641,37 +787,47 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPageVentas.ResumeLayout(false);
             this.tabPageVentas.PerformLayout();
-            this.toolStripVentas.ResumeLayout(false);
-            this.toolStripVentas.PerformLayout();
             this.tabControlVentas.ResumeLayout(false);
             this.tabPageSeleccionarCliente.ResumeLayout(false);
-            this.tabPageConfigurarPedido.ResumeLayout(false);
             this.splitContainerSeleccionarCliente.Panel1.ResumeLayout(false);
             this.splitContainerSeleccionarCliente.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerSeleccionarCliente)).EndInit();
             this.splitContainerSeleccionarCliente.ResumeLayout(false);
             this.tabControlSeleccionarCliente.ResumeLayout(false);
             this.tabPageSeleccionarClienteIndividuo.ResumeLayout(false);
-            this.tabPageSeleccionarClienteEmpresa.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSeleccionarClienteIndividuo)).EndInit();
+            this.tabPageSeleccionarClienteEmpresa.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSeleccionarClienteEmpresa)).EndInit();
-            this.groupBoxClienteSeleccionado.ResumeLayout(false);
-            this.groupBoxClienteSeleccionado.PerformLayout();
-            this.groupBoxDatosContactoClienteSeleccionado.ResumeLayout(false);
-            this.groupBoxDatosContactoClienteSeleccionado.PerformLayout();
             this.groupBoxDatosContactoClienteSelecionado.ResumeLayout(false);
             this.groupBoxDatosContactoClienteSelecionado.PerformLayout();
+            this.groupBoxDatosContactoClienteSeleccionado.ResumeLayout(false);
+            this.groupBoxDatosContactoClienteSeleccionado.PerformLayout();
+            this.groupBoxClienteSeleccionado.ResumeLayout(false);
+            this.groupBoxClienteSeleccionado.PerformLayout();
+            this.tabPageConfigurarPedido.ResumeLayout(false);
             this.splitContainerConfigurarPedido.Panel1.ResumeLayout(false);
             this.splitContainerConfigurarPedido.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerConfigurarPedido)).EndInit();
             this.splitContainerConfigurarPedido.ResumeLayout(false);
-            this.panelCategorias.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPedidoProductos)).EndInit();
-            this.panelCondiciones.ResumeLayout(false);
-            this.panelCondiciones.PerformLayout();
+            this.panelCategorias.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPedido)).EndInit();
             this.panelTotal.ResumeLayout(false);
             this.panelTotal.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPedido)).EndInit();
+            this.panelCondiciones.ResumeLayout(false);
+            this.panelCondiciones.PerformLayout();
+            this.toolStripVentas.ResumeLayout(false);
+            this.toolStripVentas.PerformLayout();
+            this.tabPageProductos.ResumeLayout(false);
+            this.tabPageProductos.PerformLayout();
+            this.tabPageClientes.ResumeLayout(false);
+            this.tabPageClientes.PerformLayout();
+            this.toolStripProductos.ResumeLayout(false);
+            this.toolStripProductos.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProductos)).EndInit();
+            this.toolStriplClientes.ResumeLayout(false);
+            this.toolStriplClientes.PerformLayout();
+            this.tabControl2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -727,6 +883,18 @@
         private System.Windows.Forms.DataGridView dataGridViewPedido;
         private System.Windows.Forms.Panel panelTotal;
         private System.Windows.Forms.Label labelTotal;
+        private System.Windows.Forms.ToolStrip toolStripProductos;
+        private System.Windows.Forms.ToolStripButton toolStripButtonAgregarProducto;
+        private System.Windows.Forms.ToolStripButton toolStripButtonModificarProducto;
+        private System.Windows.Forms.ToolStripButton toolStripButtonEliminarProducto;
+        private System.Windows.Forms.DataGridView dataGridViewProductos;
+        private System.Windows.Forms.ToolStrip toolStriplClientes;
+        private System.Windows.Forms.ToolStripButton toolStripButtonAgregarCliente;
+        private System.Windows.Forms.ToolStripButton toolStripButtonModificarCliente;
+        private System.Windows.Forms.ToolStripButton toolStripButtonEliminarCliente;
+        private System.Windows.Forms.TabControl tabControl2;
+        private System.Windows.Forms.TabPage tabPageClienteIndividuo;
+        private System.Windows.Forms.TabPage tabPageClienteEmpresa;
     }
 }
 
