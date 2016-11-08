@@ -74,21 +74,42 @@
             this.toolStripButtonCancela = new System.Windows.Forms.ToolStripButton();
             this.toolStripButtonCerrar = new System.Windows.Forms.ToolStripButton();
             this.tabPageProductos = new System.Windows.Forms.TabPage();
-            this.tabPageClientes = new System.Windows.Forms.TabPage();
-            this.tabPageProveedores = new System.Windows.Forms.TabPage();
-            this.tabPageFacturas = new System.Windows.Forms.TabPage();
+            this.dataGridViewProductos = new System.Windows.Forms.DataGridView();
             this.toolStripProductos = new System.Windows.Forms.ToolStrip();
             this.toolStripButtonAgregarProducto = new System.Windows.Forms.ToolStripButton();
             this.toolStripButtonModificarProducto = new System.Windows.Forms.ToolStripButton();
             this.toolStripButtonEliminarProducto = new System.Windows.Forms.ToolStripButton();
-            this.dataGridViewProductos = new System.Windows.Forms.DataGridView();
+            this.tabPageClientes = new System.Windows.Forms.TabPage();
+            this.tabControl2 = new System.Windows.Forms.TabControl();
+            this.tabPageClienteIndividuo = new System.Windows.Forms.TabPage();
+            this.tabPageClienteEmpresa = new System.Windows.Forms.TabPage();
             this.toolStriplClientes = new System.Windows.Forms.ToolStrip();
             this.toolStripButtonAgregarCliente = new System.Windows.Forms.ToolStripButton();
             this.toolStripButtonModificarCliente = new System.Windows.Forms.ToolStripButton();
             this.toolStripButtonEliminarCliente = new System.Windows.Forms.ToolStripButton();
-            this.tabControl2 = new System.Windows.Forms.TabControl();
-            this.tabPageClienteIndividuo = new System.Windows.Forms.TabPage();
-            this.tabPageClienteEmpresa = new System.Windows.Forms.TabPage();
+            this.tabPageProveedores = new System.Windows.Forms.TabPage();
+            this.tabPageFacturasRemitos = new System.Windows.Forms.TabPage();
+            this.dataGridViewClientesIndividuo = new System.Windows.Forms.DataGridView();
+            this.dataGridViewClientesEmpresa = new System.Windows.Forms.DataGridView();
+            this.toolStriplProveedores = new System.Windows.Forms.ToolStrip();
+            this.toolStripButtonAgregarProveedor = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButtonModificarProveedor = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButtonEliminarProveedor = new System.Windows.Forms.ToolStripButton();
+            this.dataGridViewClientesProveedores = new System.Windows.Forms.DataGridView();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.toolStripDropDownButtonOrdenar = new System.Windows.Forms.ToolStripDropDownButton();
+            this.clienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fechaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.montoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ascToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.descToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ascToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.descToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.tabControlFacturasRemitos = new System.Windows.Forms.TabControl();
+            this.tabPageFacturas = new System.Windows.Forms.TabPage();
+            this.tabPageRemitos = new System.Windows.Forms.TabPage();
+            this.dataGridViewFacturas = new System.Windows.Forms.DataGridView();
+            this.dataGridViewRemitos = new System.Windows.Forms.DataGridView();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPageVentas.SuspendLayout();
@@ -118,11 +139,25 @@
             this.panelCondiciones.SuspendLayout();
             this.toolStripVentas.SuspendLayout();
             this.tabPageProductos.SuspendLayout();
-            this.tabPageClientes.SuspendLayout();
-            this.toolStripProductos.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProductos)).BeginInit();
-            this.toolStriplClientes.SuspendLayout();
+            this.toolStripProductos.SuspendLayout();
+            this.tabPageClientes.SuspendLayout();
             this.tabControl2.SuspendLayout();
+            this.tabPageClienteIndividuo.SuspendLayout();
+            this.tabPageClienteEmpresa.SuspendLayout();
+            this.toolStriplClientes.SuspendLayout();
+            this.tabPageProveedores.SuspendLayout();
+            this.tabPageFacturasRemitos.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewClientesIndividuo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewClientesEmpresa)).BeginInit();
+            this.toolStriplProveedores.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewClientesProveedores)).BeginInit();
+            this.toolStrip1.SuspendLayout();
+            this.tabControlFacturasRemitos.SuspendLayout();
+            this.tabPageFacturas.SuspendLayout();
+            this.tabPageRemitos.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFacturas)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewRemitos)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -165,7 +200,7 @@
             this.tabControl1.Controls.Add(this.tabPageProductos);
             this.tabControl1.Controls.Add(this.tabPageClientes);
             this.tabControl1.Controls.Add(this.tabPageProveedores);
-            this.tabControl1.Controls.Add(this.tabPageFacturas);
+            this.tabControl1.Controls.Add(this.tabPageFacturasRemitos);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl1.Location = new System.Drawing.Point(0, 24);
             this.tabControl1.Name = "tabControl1";
@@ -616,35 +651,14 @@
             this.tabPageProductos.Text = "Catálogo de productos";
             this.tabPageProductos.UseVisualStyleBackColor = true;
             // 
-            // tabPageClientes
+            // dataGridViewProductos
             // 
-            this.tabPageClientes.Controls.Add(this.tabControl2);
-            this.tabPageClientes.Controls.Add(this.toolStriplClientes);
-            this.tabPageClientes.Location = new System.Drawing.Point(4, 22);
-            this.tabPageClientes.Name = "tabPageClientes";
-            this.tabPageClientes.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageClientes.Size = new System.Drawing.Size(569, 356);
-            this.tabPageClientes.TabIndex = 0;
-            this.tabPageClientes.Text = "Clientes";
-            this.tabPageClientes.UseVisualStyleBackColor = true;
-            // 
-            // tabPageProveedores
-            // 
-            this.tabPageProveedores.Location = new System.Drawing.Point(4, 22);
-            this.tabPageProveedores.Name = "tabPageProveedores";
-            this.tabPageProveedores.Size = new System.Drawing.Size(569, 356);
-            this.tabPageProveedores.TabIndex = 3;
-            this.tabPageProveedores.Text = "Proveedores";
-            this.tabPageProveedores.UseVisualStyleBackColor = true;
-            // 
-            // tabPageFacturas
-            // 
-            this.tabPageFacturas.Location = new System.Drawing.Point(4, 22);
-            this.tabPageFacturas.Name = "tabPageFacturas";
-            this.tabPageFacturas.Size = new System.Drawing.Size(569, 356);
-            this.tabPageFacturas.TabIndex = 4;
-            this.tabPageFacturas.Text = "Facturas";
-            this.tabPageFacturas.UseVisualStyleBackColor = true;
+            this.dataGridViewProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewProductos.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewProductos.Location = new System.Drawing.Point(0, 25);
+            this.dataGridViewProductos.Name = "dataGridViewProductos";
+            this.dataGridViewProductos.Size = new System.Drawing.Size(569, 331);
+            this.dataGridViewProductos.TabIndex = 1;
             // 
             // toolStripProductos
             // 
@@ -688,14 +702,50 @@
             this.toolStripButtonEliminarProducto.Text = "Eliminar";
             this.toolStripButtonEliminarProducto.ToolTipText = "Elimina el producto seleccionado.";
             // 
-            // dataGridViewProductos
+            // tabPageClientes
             // 
-            this.dataGridViewProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewProductos.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridViewProductos.Location = new System.Drawing.Point(0, 25);
-            this.dataGridViewProductos.Name = "dataGridViewProductos";
-            this.dataGridViewProductos.Size = new System.Drawing.Size(569, 331);
-            this.dataGridViewProductos.TabIndex = 1;
+            this.tabPageClientes.Controls.Add(this.tabControl2);
+            this.tabPageClientes.Controls.Add(this.toolStriplClientes);
+            this.tabPageClientes.Location = new System.Drawing.Point(4, 22);
+            this.tabPageClientes.Name = "tabPageClientes";
+            this.tabPageClientes.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageClientes.Size = new System.Drawing.Size(569, 356);
+            this.tabPageClientes.TabIndex = 0;
+            this.tabPageClientes.Text = "Clientes";
+            this.tabPageClientes.UseVisualStyleBackColor = true;
+            // 
+            // tabControl2
+            // 
+            this.tabControl2.Controls.Add(this.tabPageClienteIndividuo);
+            this.tabControl2.Controls.Add(this.tabPageClienteEmpresa);
+            this.tabControl2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl2.Location = new System.Drawing.Point(3, 28);
+            this.tabControl2.Name = "tabControl2";
+            this.tabControl2.SelectedIndex = 0;
+            this.tabControl2.Size = new System.Drawing.Size(563, 325);
+            this.tabControl2.TabIndex = 1;
+            // 
+            // tabPageClienteIndividuo
+            // 
+            this.tabPageClienteIndividuo.Controls.Add(this.dataGridViewClientesIndividuo);
+            this.tabPageClienteIndividuo.Location = new System.Drawing.Point(4, 22);
+            this.tabPageClienteIndividuo.Name = "tabPageClienteIndividuo";
+            this.tabPageClienteIndividuo.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageClienteIndividuo.Size = new System.Drawing.Size(555, 299);
+            this.tabPageClienteIndividuo.TabIndex = 0;
+            this.tabPageClienteIndividuo.Text = "Particulares";
+            this.tabPageClienteIndividuo.UseVisualStyleBackColor = true;
+            // 
+            // tabPageClienteEmpresa
+            // 
+            this.tabPageClienteEmpresa.Controls.Add(this.dataGridViewClientesEmpresa);
+            this.tabPageClienteEmpresa.Location = new System.Drawing.Point(4, 22);
+            this.tabPageClienteEmpresa.Name = "tabPageClienteEmpresa";
+            this.tabPageClienteEmpresa.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageClienteEmpresa.Size = new System.Drawing.Size(555, 299);
+            this.tabPageClienteEmpresa.TabIndex = 1;
+            this.tabPageClienteEmpresa.Text = "Empresas";
+            this.tabPageClienteEmpresa.UseVisualStyleBackColor = true;
             // 
             // toolStriplClientes
             // 
@@ -739,36 +789,217 @@
             this.toolStripButtonEliminarCliente.Text = "Eliminar";
             this.toolStripButtonEliminarCliente.ToolTipText = "Elimina el cliente seleccionado.";
             // 
-            // tabControl2
+            // tabPageProveedores
             // 
-            this.tabControl2.Controls.Add(this.tabPageClienteIndividuo);
-            this.tabControl2.Controls.Add(this.tabPageClienteEmpresa);
-            this.tabControl2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl2.Location = new System.Drawing.Point(3, 28);
-            this.tabControl2.Name = "tabControl2";
-            this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(563, 325);
-            this.tabControl2.TabIndex = 1;
+            this.tabPageProveedores.Controls.Add(this.dataGridViewClientesProveedores);
+            this.tabPageProveedores.Controls.Add(this.toolStriplProveedores);
+            this.tabPageProveedores.Location = new System.Drawing.Point(4, 22);
+            this.tabPageProveedores.Name = "tabPageProveedores";
+            this.tabPageProveedores.Size = new System.Drawing.Size(569, 356);
+            this.tabPageProveedores.TabIndex = 3;
+            this.tabPageProveedores.Text = "Proveedores";
+            this.tabPageProveedores.UseVisualStyleBackColor = true;
             // 
-            // tabPageClienteIndividuo
+            // tabPageFacturasRemitos
             // 
-            this.tabPageClienteIndividuo.Location = new System.Drawing.Point(4, 22);
-            this.tabPageClienteIndividuo.Name = "tabPageClienteIndividuo";
-            this.tabPageClienteIndividuo.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageClienteIndividuo.Size = new System.Drawing.Size(192, 74);
-            this.tabPageClienteIndividuo.TabIndex = 0;
-            this.tabPageClienteIndividuo.Text = "Particulares";
-            this.tabPageClienteIndividuo.UseVisualStyleBackColor = true;
+            this.tabPageFacturasRemitos.Controls.Add(this.tabControlFacturasRemitos);
+            this.tabPageFacturasRemitos.Controls.Add(this.toolStrip1);
+            this.tabPageFacturasRemitos.Location = new System.Drawing.Point(4, 22);
+            this.tabPageFacturasRemitos.Name = "tabPageFacturasRemitos";
+            this.tabPageFacturasRemitos.Size = new System.Drawing.Size(569, 356);
+            this.tabPageFacturasRemitos.TabIndex = 4;
+            this.tabPageFacturasRemitos.Text = "Facturas y Remitos";
+            this.tabPageFacturasRemitos.UseVisualStyleBackColor = true;
             // 
-            // tabPageClienteEmpresa
+            // dataGridViewClientesIndividuo
             // 
-            this.tabPageClienteEmpresa.Location = new System.Drawing.Point(4, 22);
-            this.tabPageClienteEmpresa.Name = "tabPageClienteEmpresa";
-            this.tabPageClienteEmpresa.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageClienteEmpresa.Size = new System.Drawing.Size(555, 299);
-            this.tabPageClienteEmpresa.TabIndex = 1;
-            this.tabPageClienteEmpresa.Text = "Empresas";
-            this.tabPageClienteEmpresa.UseVisualStyleBackColor = true;
+            this.dataGridViewClientesIndividuo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewClientesIndividuo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewClientesIndividuo.Location = new System.Drawing.Point(3, 3);
+            this.dataGridViewClientesIndividuo.Name = "dataGridViewClientesIndividuo";
+            this.dataGridViewClientesIndividuo.Size = new System.Drawing.Size(549, 293);
+            this.dataGridViewClientesIndividuo.TabIndex = 0;
+            // 
+            // dataGridViewClientesEmpresa
+            // 
+            this.dataGridViewClientesEmpresa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewClientesEmpresa.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewClientesEmpresa.Location = new System.Drawing.Point(3, 3);
+            this.dataGridViewClientesEmpresa.Name = "dataGridViewClientesEmpresa";
+            this.dataGridViewClientesEmpresa.Size = new System.Drawing.Size(549, 293);
+            this.dataGridViewClientesEmpresa.TabIndex = 0;
+            // 
+            // toolStriplProveedores
+            // 
+            this.toolStriplProveedores.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripButtonAgregarProveedor,
+            this.toolStripButtonModificarProveedor,
+            this.toolStripButtonEliminarProveedor});
+            this.toolStriplProveedores.Location = new System.Drawing.Point(0, 0);
+            this.toolStriplProveedores.Name = "toolStriplProveedores";
+            this.toolStriplProveedores.Size = new System.Drawing.Size(569, 25);
+            this.toolStriplProveedores.TabIndex = 0;
+            this.toolStriplProveedores.Text = "toolStrip1";
+            // 
+            // toolStripButtonAgregarProveedor
+            // 
+            this.toolStripButtonAgregarProveedor.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripButtonAgregarProveedor.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonAgregarProveedor.Image")));
+            this.toolStripButtonAgregarProveedor.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButtonAgregarProveedor.Name = "toolStripButtonAgregarProveedor";
+            this.toolStripButtonAgregarProveedor.Size = new System.Drawing.Size(53, 22);
+            this.toolStripButtonAgregarProveedor.Text = "Agregar";
+            // 
+            // toolStripButtonModificarProveedor
+            // 
+            this.toolStripButtonModificarProveedor.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripButtonModificarProveedor.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonModificarProveedor.Image")));
+            this.toolStripButtonModificarProveedor.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButtonModificarProveedor.Name = "toolStripButtonModificarProveedor";
+            this.toolStripButtonModificarProveedor.Size = new System.Drawing.Size(62, 22);
+            this.toolStripButtonModificarProveedor.Text = "Modificar";
+            // 
+            // toolStripButtonEliminarProveedor
+            // 
+            this.toolStripButtonEliminarProveedor.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripButtonEliminarProveedor.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonEliminarProveedor.Image")));
+            this.toolStripButtonEliminarProveedor.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButtonEliminarProveedor.Name = "toolStripButtonEliminarProveedor";
+            this.toolStripButtonEliminarProveedor.Size = new System.Drawing.Size(54, 22);
+            this.toolStripButtonEliminarProveedor.Text = "Eliminar";
+            // 
+            // dataGridViewClientesProveedores
+            // 
+            this.dataGridViewClientesProveedores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewClientesProveedores.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewClientesProveedores.Location = new System.Drawing.Point(0, 25);
+            this.dataGridViewClientesProveedores.Name = "dataGridViewClientesProveedores";
+            this.dataGridViewClientesProveedores.Size = new System.Drawing.Size(569, 331);
+            this.dataGridViewClientesProveedores.TabIndex = 1;
+            // 
+            // toolStrip1
+            // 
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripDropDownButtonOrdenar});
+            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Size = new System.Drawing.Size(569, 25);
+            this.toolStrip1.TabIndex = 0;
+            this.toolStrip1.Text = "toolStrip1";
+            // 
+            // toolStripDropDownButtonOrdenar
+            // 
+            this.toolStripDropDownButtonOrdenar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.toolStripDropDownButtonOrdenar.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.clienteToolStripMenuItem,
+            this.fechaToolStripMenuItem,
+            this.montoToolStripMenuItem});
+            this.toolStripDropDownButtonOrdenar.Image = ((System.Drawing.Image)(resources.GetObject("toolStripDropDownButtonOrdenar.Image")));
+            this.toolStripDropDownButtonOrdenar.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripDropDownButtonOrdenar.Name = "toolStripDropDownButtonOrdenar";
+            this.toolStripDropDownButtonOrdenar.Size = new System.Drawing.Size(88, 22);
+            this.toolStripDropDownButtonOrdenar.Text = "Ordernar por";
+            // 
+            // clienteToolStripMenuItem
+            // 
+            this.clienteToolStripMenuItem.Checked = true;
+            this.clienteToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.clienteToolStripMenuItem.Name = "clienteToolStripMenuItem";
+            this.clienteToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.clienteToolStripMenuItem.Text = "Cliente";
+            // 
+            // fechaToolStripMenuItem
+            // 
+            this.fechaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ascToolStripMenuItem,
+            this.descToolStripMenuItem});
+            this.fechaToolStripMenuItem.Name = "fechaToolStripMenuItem";
+            this.fechaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.fechaToolStripMenuItem.Text = "Fecha";
+            // 
+            // montoToolStripMenuItem
+            // 
+            this.montoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ascToolStripMenuItem1,
+            this.descToolStripMenuItem1});
+            this.montoToolStripMenuItem.Name = "montoToolStripMenuItem";
+            this.montoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.montoToolStripMenuItem.Text = "Monto";
+            // 
+            // ascToolStripMenuItem
+            // 
+            this.ascToolStripMenuItem.Name = "ascToolStripMenuItem";
+            this.ascToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.ascToolStripMenuItem.Text = "Asc";
+            // 
+            // descToolStripMenuItem
+            // 
+            this.descToolStripMenuItem.Name = "descToolStripMenuItem";
+            this.descToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.descToolStripMenuItem.Text = "Desc";
+            // 
+            // ascToolStripMenuItem1
+            // 
+            this.ascToolStripMenuItem1.Name = "ascToolStripMenuItem1";
+            this.ascToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.ascToolStripMenuItem1.Text = "Asc";
+            // 
+            // descToolStripMenuItem1
+            // 
+            this.descToolStripMenuItem1.Name = "descToolStripMenuItem1";
+            this.descToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.descToolStripMenuItem1.Text = "Desc";
+            // 
+            // tabControlFacturasRemitos
+            // 
+            this.tabControlFacturasRemitos.Controls.Add(this.tabPageFacturas);
+            this.tabControlFacturasRemitos.Controls.Add(this.tabPageRemitos);
+            this.tabControlFacturasRemitos.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControlFacturasRemitos.Location = new System.Drawing.Point(0, 25);
+            this.tabControlFacturasRemitos.Name = "tabControlFacturasRemitos";
+            this.tabControlFacturasRemitos.SelectedIndex = 0;
+            this.tabControlFacturasRemitos.Size = new System.Drawing.Size(569, 331);
+            this.tabControlFacturasRemitos.TabIndex = 1;
+            // 
+            // tabPageFacturas
+            // 
+            this.tabPageFacturas.Controls.Add(this.dataGridViewFacturas);
+            this.tabPageFacturas.Location = new System.Drawing.Point(4, 22);
+            this.tabPageFacturas.Name = "tabPageFacturas";
+            this.tabPageFacturas.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageFacturas.Size = new System.Drawing.Size(561, 305);
+            this.tabPageFacturas.TabIndex = 0;
+            this.tabPageFacturas.Text = "Facturas";
+            this.tabPageFacturas.UseVisualStyleBackColor = true;
+            // 
+            // tabPageRemitos
+            // 
+            this.tabPageRemitos.Controls.Add(this.dataGridViewRemitos);
+            this.tabPageRemitos.Location = new System.Drawing.Point(4, 22);
+            this.tabPageRemitos.Name = "tabPageRemitos";
+            this.tabPageRemitos.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPageRemitos.Size = new System.Drawing.Size(561, 305);
+            this.tabPageRemitos.TabIndex = 1;
+            this.tabPageRemitos.Text = "Remitos";
+            this.tabPageRemitos.UseVisualStyleBackColor = true;
+            // 
+            // dataGridViewFacturas
+            // 
+            this.dataGridViewFacturas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewFacturas.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewFacturas.Location = new System.Drawing.Point(3, 3);
+            this.dataGridViewFacturas.Name = "dataGridViewFacturas";
+            this.dataGridViewFacturas.Size = new System.Drawing.Size(555, 299);
+            this.dataGridViewFacturas.TabIndex = 0;
+            // 
+            // dataGridViewRemitos
+            // 
+            this.dataGridViewRemitos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewRemitos.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridViewRemitos.Location = new System.Drawing.Point(3, 3);
+            this.dataGridViewRemitos.Name = "dataGridViewRemitos";
+            this.dataGridViewRemitos.Size = new System.Drawing.Size(555, 299);
+            this.dataGridViewRemitos.TabIndex = 0;
             // 
             // frmPrincipal
             // 
@@ -820,14 +1051,32 @@
             this.toolStripVentas.PerformLayout();
             this.tabPageProductos.ResumeLayout(false);
             this.tabPageProductos.PerformLayout();
-            this.tabPageClientes.ResumeLayout(false);
-            this.tabPageClientes.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProductos)).EndInit();
             this.toolStripProductos.ResumeLayout(false);
             this.toolStripProductos.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProductos)).EndInit();
+            this.tabPageClientes.ResumeLayout(false);
+            this.tabPageClientes.PerformLayout();
+            this.tabControl2.ResumeLayout(false);
+            this.tabPageClienteIndividuo.ResumeLayout(false);
+            this.tabPageClienteEmpresa.ResumeLayout(false);
             this.toolStriplClientes.ResumeLayout(false);
             this.toolStriplClientes.PerformLayout();
-            this.tabControl2.ResumeLayout(false);
+            this.tabPageProveedores.ResumeLayout(false);
+            this.tabPageProveedores.PerformLayout();
+            this.tabPageFacturasRemitos.ResumeLayout(false);
+            this.tabPageFacturasRemitos.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewClientesIndividuo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewClientesEmpresa)).EndInit();
+            this.toolStriplProveedores.ResumeLayout(false);
+            this.toolStriplProveedores.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewClientesProveedores)).EndInit();
+            this.toolStrip1.ResumeLayout(false);
+            this.toolStrip1.PerformLayout();
+            this.tabControlFacturasRemitos.ResumeLayout(false);
+            this.tabPageFacturas.ResumeLayout(false);
+            this.tabPageRemitos.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewFacturas)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewRemitos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -844,7 +1093,7 @@
         private System.Windows.Forms.TabPage tabPageVentas;
         private System.Windows.Forms.TabPage tabPageProductos;
         private System.Windows.Forms.TabPage tabPageProveedores;
-        private System.Windows.Forms.TabPage tabPageFacturas;
+        private System.Windows.Forms.TabPage tabPageFacturasRemitos;
         private System.Windows.Forms.ToolStrip toolStripVentas;
         private System.Windows.Forms.ToolStripButton toolStripButtonAbrir;
         private System.Windows.Forms.ToolStripButton toolStripButtonCancela;
@@ -895,6 +1144,27 @@
         private System.Windows.Forms.TabControl tabControl2;
         private System.Windows.Forms.TabPage tabPageClienteIndividuo;
         private System.Windows.Forms.TabPage tabPageClienteEmpresa;
+        private System.Windows.Forms.DataGridView dataGridViewClientesIndividuo;
+        private System.Windows.Forms.DataGridView dataGridViewClientesEmpresa;
+        private System.Windows.Forms.ToolStrip toolStriplProveedores;
+        private System.Windows.Forms.ToolStripButton toolStripButtonAgregarProveedor;
+        private System.Windows.Forms.ToolStripButton toolStripButtonModificarProveedor;
+        private System.Windows.Forms.ToolStripButton toolStripButtonEliminarProveedor;
+        private System.Windows.Forms.DataGridView dataGridViewClientesProveedores;
+        private System.Windows.Forms.ToolStrip toolStrip1;
+        private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownButtonOrdenar;
+        private System.Windows.Forms.ToolStripMenuItem clienteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem fechaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ascToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem descToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem montoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ascToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem descToolStripMenuItem1;
+        private System.Windows.Forms.TabControl tabControlFacturasRemitos;
+        private System.Windows.Forms.TabPage tabPageFacturas;
+        private System.Windows.Forms.TabPage tabPageRemitos;
+        private System.Windows.Forms.DataGridView dataGridViewFacturas;
+        private System.Windows.Forms.DataGridView dataGridViewRemitos;
     }
 }
 
