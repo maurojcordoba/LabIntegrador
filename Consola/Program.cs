@@ -49,7 +49,17 @@ namespace Consola
             Console.WriteLine("Categoria: " + producto.Categoria);
  
             Console.WriteLine("SubCategoria: "+ producto.SubCategoria);
-                      
+
+
+            try
+            {
+                Persona persona = new Persona("Mauro", "", new DatosContacto("", "",""));
+            }
+            catch (Exception ex)
+            {
+
+                Console.WriteLine("Error: {0}", ex.Message);
+            }
 
 
 
