@@ -8,6 +8,7 @@ namespace Entidades
 {
     public class Producto
     {
+        public int Id { get; set; }
         public string Nombre { get; set; }
         public string Descripcion { get; set; }
         public decimal PrecioCosto { get; set; }
@@ -45,6 +46,24 @@ namespace Entidades
             this.Proveedor = Proveedor;
             this.Categoria = Categoria;
             this.SubCategoria = SubCategoria;
+        }
+
+        public Producto(int pId,string Nombre, string Descripcion, decimal PrecioCosto, double Margen, Empresa Proveedor, Categoria Categoria, Categoria SubCategoria)
+        {
+            this.Id = pId;
+            this.Nombre = Nombre;
+            this.PrecioCosto = PrecioCosto;
+            this.Margen = Margen;
+
+            this.Proveedor = Proveedor;
+            this.Categoria = Categoria;
+            this.SubCategoria = SubCategoria;
+        }
+
+        public Producto(int pId, string Nombre)
+        {
+            this.Id = pId;
+            this.Nombre = Nombre;
         }
 
     }

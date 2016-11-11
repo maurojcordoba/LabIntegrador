@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Entidades
 {
+    /// <summary>
+    /// Clase Persona
+    /// </summary>
     public  class Persona
     {
         public string Nombre { get; set; }
